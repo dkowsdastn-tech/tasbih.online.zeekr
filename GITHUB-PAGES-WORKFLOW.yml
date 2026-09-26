@@ -1,0 +1,42 @@
+name: Publish Nur
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Build and configure public URLs
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          node build.cjs
+          node configure-seo.cjs "$SITE_URL/"
+          mkdir _site
+          cp index.html about.html manifest.webmanifest sw.js robots.txt sitemap.xml _site/
+          cp -R assets css js locales _site/
+          find . -maxdepth 1 -name 'google*.html' -exec cp {} _site/ \;
+          if [ -f CNAME ]; then cp CNAME _site/; fi
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment

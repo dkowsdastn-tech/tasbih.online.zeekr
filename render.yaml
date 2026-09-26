@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: nur-pwa
+    runtime: node
+    buildCommand: npm --prefix backend install
+    startCommand: node backend/server.js
+    healthCheckPath: /
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_TOKEN
+        generateValue: true
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5-mini
+      - key: ALLOWED_ORIGINS
+        value: ''

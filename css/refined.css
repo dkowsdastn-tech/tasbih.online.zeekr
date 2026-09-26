@@ -1,0 +1,122 @@
+/* Nur 10 — quiet, touch-first surfaces. */
+:root { --bg:#f7f8f3; --surface:#fff; --surface-soft:#eef2e9; --line:#e2e7dc; --ink:#243c31; --muted:#6a796f; --emerald:#367b59; --emerald-deep:#326448; --emerald-soft:#e8f0df; --gold:#94783e; --gold-soft:#f5eedc; --nav-h:82px; }
+[data-theme="dark"] { --bg:#14201b; --surface:#1c2b23; --surface-raised:#23342b; --surface-soft:#26372c; --line:#354a3b; --ink:#edf3e7; --muted:#acbcaf; --emerald:#a5c69c; --emerald-deep:#acd5b5; --emerald-soft:#2d4432; --gold:#d9c798; --gold-soft:#393728; }
+[hidden] { display:none !important; }
+body { background:var(--bg); }
+.app-shell { max-width:620px; background:var(--bg); }
+.app-shell::before { display:none; }
+.topbar { height:84px; padding:20px 28px; border-bottom:0; }
+.brand { gap:9px; letter-spacing:.2em; font-size:17px; }
+.brand-mark { font-size:27px; color:var(--emerald); }
+.language-picker { border:0; background:transparent; }
+.language-picker select { font-size:16px; max-width:112px; }
+.icon-button,.icon-action { background:transparent; box-shadow:none; border:1px solid var(--line); border-radius:50%; width:44px; height:44px; }
+.screen { padding:16px 28px calc(var(--nav-h) + 28px); }
+h1 { font:600 32px/1.2 Manrope,system-ui,sans-serif; letter-spacing:-.05em; margin-top:10px; }
+h2 { line-height:1.35; }
+.screen-intro { font-size:14px; }
+.eyebrow { font-size:10px; letter-spacing:.16em; }
+.screen-topline .scratch-safe { display:none; }
+#tasbih.active { display:flex; flex-direction:column; align-items:center; min-height:calc(100svh - 160px); padding-bottom:120px; }
+#tasbih .screen-topline, #tasbih .session-note { display:none; }
+.tasbih-heading { display:block; width:100%; text-align:center; padding-top:22px; }
+.tasbih-heading h1 { font-size:22px; letter-spacing:-.04em; }
+.tasbih-heading p { font-size:12px; }
+#practiceSubtitle { display:none; }
+.tasbih-heading h1 { padding-inline:22px; }
+#tasbih:not(.free-practice) .tasbih-button { width:210px; height:210px; margin:34px auto 28px; }
+#tasbih:not(.free-practice) .tasbih-number { font-size:64px; }
+#tasbih:not(.free-practice) .count-caption { bottom:43px; }
+#tasbih:not(.free-practice) .arabic-phrase { font-size:23px; line-height:1.7; }
+#tasbih:not(.free-practice) .practice-panel { padding:14px; }
+html { scroll-padding-bottom:120px; }
+.tasbih-header-actions { position:absolute; top:98px; inset-inline-end:20px; flex-direction:column; }
+.tasbih-header-actions .icon-action { width:36px; height:36px; min-height:36px; font-size:16px; }
+.tasbih-button { flex-shrink:0; width:min(68vw,300px); height:min(68vw,300px); margin:55px auto 40px; background:#dce9d1; color:#335641; box-shadow:0 0 0 13px var(--bg),0 0 0 14px #cad9bf; border:1px solid #d0dfc5; transition:transform .1s; }
+[data-theme="dark"] .tasbih-button { background:#334d38; color:#e4efd9; border-color:#46634b; box-shadow:0 0 0 13px var(--bg),0 0 0 14px #435d45; }
+.tasbih-button::before { inset:9px; border-color:#ffffff40; }
+.tasbih-number { font-size:80px; font-weight:500; letter-spacing:-.06em; text-shadow:none; margin:0; transform:translateY(-8px); }
+.count-caption { position:absolute; bottom:62px; font-size:11px; font-weight:500; opacity:.75; }
+.tasbih-orbit { display:none; }
+.tasbih-button.goal-hit { animation:none; }
+.practice-panel { width:100%; padding:18px; border-radius:20px; background:var(--surface); box-shadow:none; }
+.practice-panel strong { white-space:normal; }
+.arabic-phrase { font-size:27px; line-height:1.8; text-align:center; overflow-wrap:anywhere; }
+.transliteration { font-size:13px; line-height:1.6; text-align:center; }
+.practice-kicker { display:none; }
+.practice-progress { font-size:12px; }
+.tasbih-actions { display:flex; margin-top:24px; justify-content:center; width:100%; }
+.free-practice .tasbih-actions { margin-top:0; }
+#choosePractice { background:var(--surface); border:1px solid var(--line); box-shadow:none; color:var(--ink); font-weight:600; padding:0 24px; min-height:46px; border-radius:28px; }
+#saveTasbih { display:none !important; }
+#restartCycle { margin:-10px 0 22px; }
+.primary-button { background:var(--emerald); box-shadow:none; }
+[data-theme="dark"] .primary-button { color:#14201b; }
+.primary-button,.secondary-button { min-height:48px; font-size:13px; }
+.bottom-nav { width:min(calc(100% - 28px),560px); height:calc(70px + env(safe-area-inset-bottom)); bottom:12px; border:1px solid var(--line); padding:8px 8px calc(8px + env(safe-area-inset-bottom)); border-radius:24px; background:var(--surface); box-shadow:0 5px 30px #19331b0b; gap:4px; }
+[data-theme="dark"] .bottom-nav { background:var(--surface); }
+.nav-item { border-radius:17px; gap:5px; justify-content:center; min-height:50px; }
+.nav-item span { font-size:21px; line-height:22px; font-weight:400; }
+.nav-item small { font-size:10px; max-width:100%; font-weight:600; }
+.nav-item.active { background:var(--emerald-soft); color:var(--ink); }
+.scratch-card { height:auto; min-height:360px; max-height:none; border:1px solid var(--line); box-shadow:none; background:var(--surface); border-radius:24px; }
+.sunna-content { position:relative; min-height:360px; padding:30px; justify-content:center; opacity:1 !important; transform:none; background:var(--surface); color:var(--ink); }
+.sunna-content::before { font-size:160px; color:var(--emerald-soft); top:5px; right:-20px; }
+.sunna-content .card-type { color:var(--gold); }
+.sunna-content blockquote { font:500 25px/1.45 Manrope,system-ui,sans-serif; letter-spacing:-.04em; margin:25px 0; }
+.sunna-source { position:relative; z-index:1; color:var(--emerald); font-size:12px; }
+.scratch-hint { color:#fff8df; }
+.scratch-card.revealed canvas { display:none; }
+.scratch-card canvas { z-index:2; }
+.scratch-hint { z-index:3; }
+.scratch-meter { margin:18px 0; }
+.source-note { font-size:12px; line-height:1.65; }
+.knowledge-quest { display:none; }
+.daily-insight { background:var(--emerald-soft); border:0; border-radius:20px; box-shadow:none; padding:20px; margin-top:24px; }
+.daily-insight strong { font-size:16px; }
+.daily-insight,.daily-insight strong { color:var(--ink); }
+.daily-insight small,.daily-insight em { color:var(--emerald-deep); }
+.daily-insight .insight-spark,.daily-insight b { color:var(--gold); }
+.search-box { margin:24px 0 10px; display:flex; gap:10px; align-items:center; padding:0 16px; background:var(--surface); border:1px solid var(--line); border-radius:15px; }
+.search-box span { font-size:25px; color:var(--muted); }
+.search-box input { width:100%; min-width:0; border:0; outline:0; background:transparent; color:var(--ink); font-size:16px; padding:14px 0; }
+.knowledge-filters { margin:0 0 16px; padding:4px 0 8px; gap:7px; }
+.knowledge-filter { font-size:12px; min-height:40px; }
+.knowledge-grid { display:grid; grid-template-columns:1fr; gap:12px; }
+.knowledge-card,.knowledge-card.wide-card { grid-column:auto; min-height:160px; padding:20px 20px 42px; background:var(--surface); color:var(--ink); border:1px solid var(--line); box-shadow:none; border-radius:20px; }
+.knowledge-card::before { display:none; }
+.knowledge-card .knowledge-icon { float:right; color:var(--emerald); background:var(--emerald-soft); }
+.knowledge-card .label { color:var(--gold); }
+.knowledge-card h3 { font:600 20px/1.35 Manrope,system-ui,sans-serif; letter-spacing:-.04em; margin:8px 0; }
+.knowledge-card p { color:var(--muted); font-size:13px; line-height:1.6; }
+.knowledge-card footer { color:var(--emerald); font-size:10px; bottom:16px; }
+.settings-card { box-shadow:none; min-height:80px; }
+.settings-card h3 { font-size:14px; }
+.settings-card p { font-size:12px; }
+.settings-card select,.select-field { font-size:16px; max-width:100%; }
+.settings-card select { background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:10px; padding:8px; }
+.faq-item summary { font-size:14px; padding:20px 0; }
+.faq-item p { font-size:13px; line-height:1.8; }
+.modal { padding:28px; border:1px solid var(--line); }
+.modal h2 { font:600 27px/1.25 Manrope,system-ui,sans-serif; margin-top:12px; letter-spacing:-.04em; }
+.modal > form > p { font-size:14px; line-height:1.8; }
+.modal-source { display:block; line-height:1.6; }
+.modal-close { width:44px; height:44px; z-index:2; }
+.practice-option { padding:15px; }
+.practice-option strong { font-size:14px; }
+.practice-option small { font-size:12px; line-height:1.55; }
+.about-app { text-align:center; padding:0 20px 120px; font-size:11px; }
+.about-app a { color:var(--muted); }
+.app-shell:has(#tasbih.active) .about-app { display:none; }
+.app-shell.focus-mode { min-height:100dvh; border-radius:0; }
+.app-shell.focus-mode .screen:not(.active) { display:none !important; }
+.app-shell.focus-mode #tasbih.active { min-height:100dvh; padding:20px; display:grid; place-content:center; }
+.app-shell.focus-mode .tasbih-button { width:min(72vw,350px); height:min(72vw,350px); margin:0; }
+.app-shell.focus-mode::after,.app-shell.focus-mode #restartCycle,.app-shell.focus-mode .about-app { display:none; }
+.exit-focus { position:fixed; top:calc(16px + env(safe-area-inset-top)); inset-inline-end:16px; z-index:20; border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:50%; width:44px; height:44px; font-size:25px; }
+.no-script { padding:25px; }
+#appMain { touch-action:pan-y pinch-zoom; }
+#countButton,button,a,summary { touch-action:manipulation; }
+@media(min-width:560px) { body { padding:24px; } .app-shell { min-height:calc(100dvh - 48px); border:1px solid var(--line); box-shadow:none; } .bottom-nav { bottom:22px; border-radius:24px; } #tasbih.active { min-height:calc(100svh - 205px); } body:has(.focus-mode) { padding:0; } }
+@media(max-width:360px) { .topbar,.screen { padding-inline:18px; } .tasbih-heading h1 { font-size:20px; } .tasbih-header-actions { inset-inline-end:10px; } .tasbih-button { margin-top:48px; } .count-caption { bottom:48px; } .nav-item small { font-size:9px; } .sunna-content { padding:24px; } }
+@media(max-height:700px) { .tasbih-heading { padding-top:4px; } .tasbih-button { width:min(61vw,250px); height:min(61vw,250px); margin:35px auto; } .tasbih-number { font-size:66px; } .count-caption { bottom:45px; } }

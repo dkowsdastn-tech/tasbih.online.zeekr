@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "title": "Nur — amalan berkesedaran"
+  },
+  "nav": {
+    "tasbih": "Tasbih",
+    "sunna": "Sunnah",
+    "knowledge": "Ilmu",
+    "assistant": "Panduan",
+    "quran": "Al-Quran",
+    "stories": "Kisah",
+    "settings": "Lagi",
+    "more": "Lagi"
+  },
+  "common": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "close": "Tutup"
+  },
+  "tasbih": {
+    "eyebrow": "Amalan berkesedaran",
+    "title": "Tasbih pintar",
+    "private": "Peribadi pada peranti ini",
+    "currentPractice": "Amalan semasa",
+    "choosePractice": "Zikir dan set",
+    "collectionsEyebrow": "Pilih amalan anda",
+    "collectionsTitle": "Zikir dan set",
+    "collectionsIntro": "Pilih set yang tenang dan tersusun atau kaunter bebas.",
+    "freePrompt": "Pilih set zikir apabila anda bersedia.",
+    "savedToday": "Disimpan hari ini: {count}",
+    "saved": "Disimpan pada peranti ini.",
+    "ready": "Kiraan tenang yang hanya disimpan dalam pelayar ini.",
+    "resetDone": "Kiraan semasa dibersihkan",
+    "nothingToSave": "Buat beberapa kiraan dahulu, kemudian simpan.",
+    "practiceSelected": "Dipilih: {name}",
+    "nextStep": "Seterusnya: {phrase}",
+    "goalDone": "Masya-Allah! {name} selesai.",
+    "save": "Simpan",
+    "chooseDhikr": "Pilih zikir",
+    "tap": "ketik untuk zikir",
+    "reset": "Set semula"
+  },
+  "scratch": {
+    "eyebrow": "Sunnah kecil hari ini",
+    "title": "Gosok dan temui",
+    "intro": "Gerakkan jari pada lapisan untuk membuka peringatan yang lembut.",
+    "hint": "Gosok di sini",
+    "safe": "Mesra sentuhan",
+    "revealed": "terbuka",
+    "reveal": "Buka kad",
+    "new": "Kad baharu",
+    "complete": "Peringatan terbuka sepenuhnya ✦",
+    "manualComplete": "Kad dibuka ✦",
+    "sourceNote": "Ini ialah ringkasan ringkas; semak lafaz dalam sumber utama.",
+    "sunnahs": [
+      {
+        "quote": "Jangan memandang remeh apa-apa kebaikan, walaupun bertemu saudaramu dengan wajah yang ceria.",
+        "source": "Sahih Muslim, 2626"
+      },
+      {
+        "quote": "Allah menyukai kelembutan dalam setiap urusan.",
+        "source": "Sahih al-Bukhari, 6927; Sahih Muslim, 2165"
+      },
+      {
+        "quote": "Sesiapa yang tidak mengasihi, tidak akan dikasihi.",
+        "source": "Sahih al-Bukhari, 6013; Sahih Muslim, 2318"
+      },
+      {
+        "quote": "Pause before an ordinary task and consider the good you intend. The hadith connects deeds with intentions.",
+        "source": "Сахих аль-Бухари, 1",
+        "url": "https://sunnah.com/bukhari:1"
+      },
+      {
+        "quote": "Choose a manageable good deed and return to it regularly. The hadith values consistency even in small deeds.",
+        "source": "Сахих аль-Бухари, 6464",
+        "url": "https://sunnah.com/bukhari:6464"
+      },
+      {
+        "quote": "Mention Allah’s name, eat with your right hand, and take what is nearest to you in a shared dish.",
+        "source": "Сахих аль-Бухари, 5376",
+        "url": "https://sunnah.com/bukhari:5376"
+      },
+      {
+        "quote": "Let your words bring good. When there is nothing good to say, silence can help prevent harmful speech.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "The hadith connects faith with avoiding harm to neighbours and treating guests generously.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "Make ablution before bed and lie on your right side. Both actions appear in the Prophet’s guidance.",
+        "source": "Сахих аль-Бухари, 6311",
+        "url": "https://sunnah.com/bukhari:6311"
+      },
+      {
+        "quote": "Do not postpone charity just because you can give only a little. The hadith mentions even half a date.",
+        "source": "Сахих аль-Бухари, 1417",
+        "url": "https://sunnah.com/bukhari:1417"
+      },
+      {
+        "quote": "Share the greeting of peace. The hadith describes salam as a way to strengthen love among believers.",
+        "source": "Сахих Муслим, 54a",
+        "url": "https://sunnah.com/muslim:54a"
+      },
+      {
+        "quote": "Helping someone through difficulty is a meaningful good deed. The hadith encourages support and easing hardship.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Seeking beneficial knowledge is worth the effort. Read thoughtfully, check sources, and ask a knowledgeable person about what is unclear.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Gentleness makes actions better. Try expressing the same idea calmly, without harshness or humiliation.",
+        "source": "Сахих Муслим, 2594a",
+        "url": "https://sunnah.com/muslim:2594a"
+      },
+      {
+        "quote": "Alhamdulillah expresses praise of Allah. The hadith describes the significance of these words, remembrance, prayer and patience.",
+        "source": "Сахих Муслим, 223",
+        "url": "https://sunnah.com/muslim:223"
+      }
+    ]
+  },
+  "knowledge": {
+    "eyebrow": "Bacaan bermanfaat",
+    "title": "Ilmu dan manfaat",
+    "intro": "Peringatan ringkas yang berasaskan sumber untuk hari yang penuh perhatian.",
+    "today": "Renungan hari ini",
+    "filterAll": "Semua",
+    "filterDaily": "Harian",
+    "filterHeart": "Hati",
+    "filterPractice": "Amalan",
+    "questEyebrow": "ILMU HARI INI",
+    "questTitle": "Buka satu peringatan",
+    "questText": "Buka kad, semak sumbernya dan pilih satu langkah kecil.",
+    "read": "Langkah kecil hari ini"
+  },
+  "assistant": {
+    "eyebrow": "Panduan yang berhati-hati",
+    "title": "Panduan Islam",
+    "disclaimer": "Ini bantuan rujukan, bukan pengganti ulama atau imam.",
+    "sourceOnly": "Al-Quran · sumber sahih",
+    "quran": "Al-Quran",
+    "bukhari": "Sahih al-Bukhari",
+    "muslim": "Sahih Muslim",
+    "inputLabel": "Soalan anda",
+    "placeholder": "Tanya soalan dengan beradab…",
+    "greeting": "Assalamu alaikum. Saya memberi panduan rujukan yang berhati-hati daripada al-Quran dan hadis sahih, tanpa fatwa. Bagaimana saya boleh membantu?",
+    "assistantLabel": "Panduan",
+    "youLabel": "Anda",
+    "thinking": "Meneliti jawapan rujukan",
+    "footnote": "Untuk perkara peribadi atau khilaf, sila berbincang dengan imam tempatan yang berilmu.",
+    "chips": [
+      "Bagaimana cara wuduk?",
+      "Apa yang membatalkan puasa?",
+      "Syarat penerimaan doa",
+      "Mengapa ulama berbeza pandangan?"
+    ]
+  },
+  "quran": {
+    "eyebrow": "Dengar dengan penuh perhatian",
+    "title": "Al-Quran Mulia",
+    "reciter": "Qari",
+    "surah": "Surah",
+    "nowPlaying": "Sedang dimainkan",
+    "audioNote": "Audio distrim daripada perpustakaan awam luaran; internet diperlukan.",
+    "audioError": "Audio tidak tersedia. Semak internet atau pilih qari lain.",
+    "loading": "Memuatkan audio…"
+  },
+  "settings": {
+    "eyebrow": "Ruang anda",
+    "title": "Tetapan & Soalan Lazim",
+    "experience": "Pengalaman",
+    "appearance": "Penampilan",
+    "appearanceHint": "Tema cerah atau gelap",
+    "sound": "Bunyi lembut",
+    "soundHint": "Nada untuk zikir, tab dan pencapaian",
+    "haptics": "Maklum balas haptik",
+    "hapticsHint": "Getaran pendek jika disokong",
+    "motion": "Kurangkan gerakan",
+    "motionHint": "Peralihan lebih lembut",
+    "languageSection": "Bahasa & tipografi",
+    "language": "Bahasa",
+    "languageHint": "Antara muka, kandungan dan fon mengikut tulisan",
+    "appSection": "Aplikasi & data",
+    "install": "Pasang aplikasi",
+    "installHint": "Gunakan seperti aplikasi pada telefon",
+    "installNow": "Pasang sekarang",
+    "export": "Eksport data tempatan",
+    "exportHint": "Fail sandaran peribadi pada peranti ini",
+    "moderate": "Moderasi kisah yang dihantar",
+    "moderateHint": "Memerlukan token pentadbir pelayan",
+    "clearData": "Padam data aplikasi tempatan",
+    "dataWarning": "Data peranti",
+    "clearNow": "Padam data",
+    "readyToInstall": "Sedia dipasang",
+    "installed": "Nur telah dipasang.",
+    "installedTitle": "Nur sudah dipasang",
+    "installedText": "Anda sedang menggunakan versi kendiri aplikasi.",
+    "installedHint": "Dipasan pada peranti ini",
+    "serverRequiredTitle": "Buka Nur melalui pelayan",
+    "serverRequiredText": "Fail yang dibuka terus dari komputer tidak dapat mendaftarkan service worker, jadi PWA tidak boleh dipasang.",
+    "serverStep1": "Buka folder backend dalam terminal.",
+    "serverStep2": "Jalankan: npm start",
+    "serverStep3": "Buka http://localhost:8080, kemudian kembali untuk memasang.",
+    "readyInstallTitle": "Nur sedia dipasang",
+    "readyInstallText": "Pasang untuk pengalaman skrin penuh seperti aplikasi.",
+    "readyInstallStep": "Gunakan butang “Pasang sekarang” di bawah.",
+    "iosInstallTitle": "Tambah Nur ke Skrin Utama",
+    "iosInstallText": "Safari memasang aplikasi web melalui menu Kongsi.",
+    "iosStep1": "Buka halaman ini dalam Safari.",
+    "iosStep2": "Ketik Kongsi.",
+    "iosStep3": "Pilih Tambah ke Skrin Utama, kemudian Tambah.",
+    "browserInstallTitle": "Pasang daripada pelayar",
+    "browserInstallText": "Jika gesaan pemasangan belum tersedia, gunakan menu pelayar: Pasang aplikasi atau Tambah ke skrin utama.",
+    "browserStep1": "Pastikan halaman dibuka melalui HTTPS atau localhost.",
+    "browserStep2": "Buka menu pelayar dan pilih pasang aplikasi.",
+    "browserStep3": "Jika halaman baru dibuka, beri masa untuk service worker selesai dipasang.",
+    "exported": "Sandaran tempatan dimuat turun.",
+    "darkTheme": "Gunakan tema gelap",
+    "lightTheme": "Gunakan tema cerah"
+  },
+  "stories": {
+    "eyebrow": "Komuniti yang dimoderasi dengan teliti",
+    "title": "Kisah anda",
+    "intro": "Tempat tenang untuk perjalanan kepada Islam, kesyukuran dan pelajaran yang mungkin membantu orang lain.",
+    "loading": "Memuatkan kisah…",
+    "publishedCount": "Diterbitkan: {count}",
+    "empty": "Belum ada kisah diterbitkan.",
+    "serverUnavailable": "Kisah memerlukan pelayan Nur yang disertakan. Jalankan pelayan dan buka aplikasi melalui localhost atau HTTPS.",
+    "share": "Kongsi kisah anda",
+    "shareHint": "Setiap kiriman disemak sebelum diterbitkan",
+    "notice": "Jangan masukkan nombor telefon, alamat, dokumen atau data peribadi sensitif.",
+    "formEyebrow": "Hantar untuk semakan",
+    "formTitle": "Berkongsi dengan berhemah",
+    "formIntro": "Kisah anda kekal peribadi sehingga dihantar dan diluluskan moderator.",
+    "author": "Nama atau nama samaran",
+    "storyTitle": "Tajuk",
+    "body": "Kisah anda",
+    "consent": "Saya faham kisah ini dihantar kepada moderator untuk semakan dan tidak boleh mengandungi maklumat peribadi sensitif.",
+    "submit": "Hantar untuk semakan",
+    "formInvalid": "Isi nama, tajuk, sekurang-kurangnya 20 aksara dan sahkan notis privasi.",
+    "sending": "Menghantar untuk semakan…",
+    "sent": "Terima kasih. Kisah dihantar untuk moderasi.",
+    "sendError": "Kisah tidak dapat dihantar. Semak pelayan dan cuba lagi."
+  },
+  "faq": {
+    "title": "Soalan lazim"
+  },
+  "more": {
+    "eyebrow": "Lagi",
+    "title": "Lagi dalam Nur",
+    "intro": "Akses pantas kepada pembantu, tetapan, pemasangan dan alat komuniti.",
+    "assistant": "Pembantu",
+    "assistantHint": "Tanya soalan rujukan dengan cermat",
+    "settings": "Tetapan",
+    "settingsHint": "Tema, bahasa, bunyi dan data",
+    "install": "Pasang Nur",
+    "installHint": "Gunakan Nur seperti aplikasi di telefon",
+    "moderator": "Moderasi",
+    "moderatorHint": "Semak cerita komuniti yang dihantar",
+    "note": "Kiraan dan pilihan tempatan kekal dalam pelayar ini. Cerita yang diterbitkan diurus oleh pelayan Nur."
+  }
+}
