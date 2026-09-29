@@ -195,3 +195,52 @@ html[data-reduce-motion="true"] #tasbih .tasbih-pulse,
 html[data-reduce-motion="true"] #tasbih .tasbih-orbit {
   animation: none !important;
 }
+
+
+/* Search-friendly explanatory content kept below the primary counter */
+.tasbih-seo-info {
+  width: min(100%, 620px);
+  margin: 10px auto 28px;
+  border-top: 1px solid color-mix(in srgb, currentColor 9%, transparent);
+}
+.tasbih-seo-info > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 4px 8px;
+  text-align: center;
+  font-size: .82rem;
+  font-weight: 650;
+  opacity: .55;
+}
+.tasbih-seo-info > summary::-webkit-details-marker { display: none; }
+.tasbih-seo-info > summary::after {
+  content: "  +";
+  font-weight: 500;
+}
+.tasbih-seo-info[open] > summary::after { content: "  −"; }
+.tasbih-seo-copy {
+  padding: 8px 4px 10px;
+  text-align: left;
+}
+.tasbih-seo-copy h2,
+.tasbih-seo-copy h3 {
+  letter-spacing: -.02em;
+}
+.tasbih-seo-copy h2 {
+  margin: 12px 0 10px;
+  font-size: 1.12rem;
+}
+.tasbih-seo-copy h3 {
+  margin: 20px 0 7px;
+  font-size: .98rem;
+}
+.tasbih-seo-copy p {
+  margin: 0 0 10px;
+  font-size: .88rem;
+  line-height: 1.65;
+  opacity: .7;
+}
+.tasbih-seo-copy a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
