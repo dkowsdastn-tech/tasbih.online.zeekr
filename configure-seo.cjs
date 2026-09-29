@@ -10,7 +10,8 @@ for(const page of ['index.html','about.html']){
  html=html.replace('</head>',`<link rel="canonical" href="${esc(url)}" />\n<meta property="og:url" content="${esc(url)}" />\n</head>`);
  fs.writeFileSync(file,html);
 }
+const today=new Date().toISOString().slice(0,10);
 const urls=[base.href,new URL('about.html',base).href];
-fs.writeFileSync(path.join(__dirname,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${esc(url)}</loc></url>`).join('\n')+'\n</urlset>\n');
+fs.writeFileSync(path.join(__dirname,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${esc(url)}</loc><lastmod>${today}</lastmod></url>`).join('\n')+'\n</urlset>\n');
 fs.writeFileSync(path.join(__dirname,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap.xml',base).href}\n`);
 console.log('SEO configured for '+base.href);
