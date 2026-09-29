@@ -17,7 +17,11 @@ const getSaved = (key, fallback) => { try { return JSON.parse(storage.getItem(ST
 const save = (key, value) => storage.setItem(STORAGE + key, JSON.stringify(value));
 const getPath = (object, path) => path.split(".").reduce((value, key) => value?.[key], object);
 const interpolate = (value, vars = {}) => String(value ?? "").replace(/\{(\w+)\}/g, (_, key) => vars[key] ?? "");
-const dayStamp = () => new Date().toISOString().slice(0, 10);
+const dayStamp = () => {
+  const date = new Date();
+  const offset = date.getTimezoneOffset();
+  return new Date(date.getTime() - offset * 60_000).toISOString().slice(0, 10);
+};
 const dayOfYear = () => Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86_400_000);
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
@@ -422,7 +426,7 @@ function installGuidance() {
 function updateInstallHint() { if (!elements.installHint) return {}; const info = installGuidance(); elements.installHint.textContent = isStandalone() ? t("settings.installedHint", "Installed on this device") : (deferredInstall ? t("settings.readyToInstall", "Ready to install") : t("settings.installHint", "Use it like an app on your phone")); return info; }
 function openInstallDialog() { const info = updateInstallHint(); elements.installDialogTitle.textContent = info.title; elements.installDialogText.textContent = info.text; elements.installSteps.replaceChildren(...info.steps.map(step => { const item = document.createElement("li"); item.textContent = step; return item; })); elements.installPromptButton.hidden = !info.canPrompt; safeDialogOpen(elements.installDialog); }
 async function promptInstall() { if (!deferredInstall) return; try { await deferredInstall.prompt(); await deferredInstall.userChoice; } catch { /* Browser owns this prompt; a failure is non-fatal. */ } finally { deferredInstall = undefined; elements.installPromptButton.hidden = true; updateInstallHint(); } }
-function exportLocalData() { const snapshot = {}; for (let index = 0; index < storage.length; index++) { const key = storage.key(index); if (key?.startsWith(STORAGE)) snapshot[key.slice(STORAGE.length)] = getSaved(key.slice(STORAGE.length), null); }
+function exportLocalData() { const snapshot = {}; for (const key of storage.keys()) { if (key?.startsWith(STORAGE)) snapshot[key.slice(STORAGE.length)] = getSaved(key.slice(STORAGE.length), null); }
   const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), app: "Nur", data: snapshot }, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `nur-backup-${dayStamp()}.json`; anchor.click(); setTimeout(() => URL.revokeObjectURL(url), 1_000); playSound("save"); showToast(t("settings.exported", "Local backup downloaded."));
 }
 function clearAllLocalData() { storage.keys().filter(key => key.startsWith(STORAGE)).forEach(key => storage.removeItem(key)); location.reload(); }
