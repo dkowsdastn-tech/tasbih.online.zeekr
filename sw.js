@@ -1,7 +1,7 @@
 /* Only cache this app's public shell; never APIs or remote audio. */
 const PREFIX = 'nur-shell-' + encodeURIComponent(self.registration.scope) + '-';
-const CACHE = PREFIX + 'v10.1';
-const CORE = ['./index.html','./about.html','./css/styles.css?v=10','./css/refined.css?v=10','./js/nur.bundle.js?v=10','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
+const CACHE = PREFIX + 'v11.0';
+const CORE = ['./index.html','./about.html','./css/styles.css?v=11','./css/refined.css?v=11','./css/minimal-home.css?v=11','./js/nur.bundle.js?v=11','./js/minimal-home.js?v=11','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch', event => {
