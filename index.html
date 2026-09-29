@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
     <meta name="theme-color" content="#08785f" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="description" content="Nur — бесплатный онлайн тасбих (таспих): счётчик зикра, 33–33–33–1 после намаза, Сунна, хадисы и аудио Корана. Работает на телефоне и компьютере." />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,10 +22,11 @@
     <meta property="og:title" content="Nur — онлайн тасбих и зикры" />
     <meta property="og:description" content="Спокойное место для зикра. Свободный счётчик, 33–33–33–1, Сунна и Коран." />
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Nur — онлайн тасбих","applicationCategory":"LifestyleApplication","operatingSystem":"Any","isAccessibleForFree":true,"inLanguage":["ru","en","kk","ar"],"description":"Онлайн счётчик зикра, тасбих после намаза 33–33–33–1, Сунна и хадисы."}</script>
-    <link rel="stylesheet" href="./css/styles.css?v=10" />
-  <link rel="stylesheet" href="./css/refined.css?v=10" />
+    <link rel="stylesheet" href="./css/styles.css?v=11" />
+    <link rel="stylesheet" href="./css/refined.css?v=11" />
+    <link rel="stylesheet" href="./css/minimal-home.css?v=11" />
   </head>
-  <body>
+  <body class="home-minimal">
     <div class="app-shell">
       <header class="topbar">
         <button class="icon-button" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">
@@ -131,6 +133,7 @@
     <dialog id="clearDataDialog" class="modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" data-i18n="settings.dataWarning">Device data</div><h2 data-i18n="settings.clearData">Clear local app data</h2><p data-i18n="settings.clearConfirm">This removes only this browser’s Nur counter, saved practice history, and preferences. It cannot remove stories already sent to your server.</p><div class="modal-buttons"><button class="secondary-button" value="cancel" type="submit" data-i18n="common.cancel">Cancel</button><button class="danger-button" id="confirmClearData" value="confirm" type="submit" data-i18n="settings.clearNow">Clear data</button></div></form></dialog>
     <button id="exitFocus" class="exit-focus" type="button" hidden aria-label="Выйти из режима тишины">×</button><noscript><p class="no-script">Для счётчика включите JavaScript. <a href="./about.html">Инструкция и вопросы о Nur</a></p></noscript><div class="toast" id="toast" role="status" aria-live="polite"></div>
     <svg class="svg-sprite" aria-hidden="true"><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.4 15.3A8.6 8.6 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
-    <script defer src="./js/nur.bundle.js?v=10"></script>
+    <script defer src="./js/nur.bundle.js?v=11"></script>
+    <script defer src="./js/minimal-home.js?v=11"></script>
   </body>
 </html>
