@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Nur — онлайн тасбих",
-  "short_name": "Nur",
-  "description": "Счётчик зикра, Сунна, знания и Коран.",
+  "name": "Nur Tasbih — тасбих онлайн",
+  "short_name": "Nur Tasbih",
+  "description": "Бесплатный тасбих онлайн: счётчик зикра, 33–33–33–1, Сунна, знания и Коран.",
   "lang": "ru",
   "dir": "ltr",
   "start_url": "./",
