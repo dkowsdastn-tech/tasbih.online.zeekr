@@ -28,7 +28,7 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           node build.cjs
-          node configure-seo.cjs "$SITE_URL/"
+          node configure-seo.cjs "${SITE_URL/#http:/https:}/"
           mkdir _site
           cp index.html about.html manifest.webmanifest sw.js robots.txt sitemap.xml _site/
           cp -R assets css js locales _site/
@@ -40,3 +40,4 @@ jobs:
           path: _site
       - uses: actions/deploy-pages@v4
         id: deployment
+
