@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "tasbih": "تسبيح",
+    "sunna": "السنة",
+    "knowledge": "معرفة",
+    "assistant": "الذكاء",
+    "quran": "القرآن",
+    "stories": "القصص",
+    "settings": "المزيد",
+    "more": "المزيد"
+  },
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "close": "إغلاق"
+  },
+  "tasbih": {
+    "eyebrow": "عبادة بوعي",
+    "title": "مسبحة ذكية",
+    "save": "حفظ",
+    "chooseDhikr": "اختر الذكر",
+    "tap": "المس للذكر",
+    "reset": "إعادة",
+    "savedToday": "المحفوظ اليوم: {count}",
+    "saved": "تم حفظ النتيجة على هذا الجهاز",
+    "resetDone": "تمت إعادة العداد",
+    "goalDone": "ما شاء الله! اكتملت {name}.",
+    "private": "خاص على هذا الجهاز",
+    "currentPractice": "الورد الحالي",
+    "choosePractice": "أوراد الذكر",
+    "collectionsEyebrow": "اختر وردك",
+    "collectionsTitle": "أوراد الذكر",
+    "collectionsIntro": "اختر ورداً منظماً بلطف أو استخدم العداد الحر.",
+    "freePrompt": "اختر ورداً من الأذكار عندما تكون مستعداً.",
+    "ready": "عداد هادئ محفوظ في هذا المتصفح فقط.",
+    "nothingToSave": "عدّ بعض الأذكار أولاً ثم احفظها.",
+    "practiceSelected": "تم الاختيار: {name}",
+    "nextStep": "التالي: {phrase}",
+    "dhikrs": [
+      {
+        "arabic": "سُبْحَانَ ٱللَّٰهِ",
+        "label": "سبحان الله",
+        "transcription": "SubḥānAllāh"
+      },
+      {
+        "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+        "label": "الحمد لله",
+        "transcription": "Alḥamdulillāh"
+      },
+      {
+        "arabic": "ٱللَّٰهُ أَكْبَرُ",
+        "label": "الله أكبر",
+        "transcription": "Allāhu Akbar"
+      },
+      {
+        "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+        "label": "لا إله إلا الله",
+        "transcription": "Lā ilāha illā-llāh"
+      }
+    ]
+  },
+  "scratch": {
+    "eyebrow": "سنة يسيرة اليوم",
+    "title": "اكشف وتعلّم",
+    "intro": "مرر إصبعك فوق الطبقة لتظهر لك تذكرة لطيفة.",
+    "hint": "امسح هنا",
+    "revealed": "تم كشفه",
+    "safe": "يعمل باللمس",
+    "reveal": "اكشف البطاقة",
+    "manualComplete": "تم كشف البطاقة ✦",
+    "new": "بطاقة جديدة",
+    "complete": "ظهرت التذكرة كاملة ✦",
+    "sourceNote": "هذه صياغات موجزة؛ راجع النص في مصادره الأصلية.",
+    "sunnahs": [
+      {
+        "quote": "لا تحقرن من المعروف شيئاً ولو أن تلقى أخاك بوجه طلق.",
+        "source": "صحيح مسلم، 2626"
+      },
+      {
+        "quote": "إن الله يحب الرفق في الأمر كله.",
+        "source": "صحيح البخاري، 6927؛ صحيح مسلم، 2165"
+      },
+      {
+        "quote": "من لا يَرحم لا يُرحم.",
+        "source": "صحيح البخاري، 6013؛ صحيح مسلم، 2318"
+      },
+      {
+        "quote": "خياركم أحاسنكم أخلاقاً.",
+        "source": "صحيح البخاري، 6035"
+      },
+      {
+        "quote": "Pause before an ordinary task and consider the good you intend. The hadith connects deeds with intentions.",
+        "source": "Сахих аль-Бухари, 1",
+        "url": "https://sunnah.com/bukhari:1"
+      },
+      {
+        "quote": "Choose a manageable good deed and return to it regularly. The hadith values consistency even in small deeds.",
+        "source": "Сахих аль-Бухари, 6464",
+        "url": "https://sunnah.com/bukhari:6464"
+      },
+      {
+        "quote": "Mention Allah’s name, eat with your right hand, and take what is nearest to you in a shared dish.",
+        "source": "Сахих аль-Бухари, 5376",
+        "url": "https://sunnah.com/bukhari:5376"
+      },
+      {
+        "quote": "Let your words bring good. When there is nothing good to say, silence can help prevent harmful speech.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "The hadith connects faith with avoiding harm to neighbours and treating guests generously.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "Make ablution before bed and lie on your right side. Both actions appear in the Prophet’s guidance.",
+        "source": "Сахих аль-Бухари, 6311",
+        "url": "https://sunnah.com/bukhari:6311"
+      },
+      {
+        "quote": "Do not postpone charity just because you can give only a little. The hadith mentions even half a date.",
+        "source": "Сахих аль-Бухари, 1417",
+        "url": "https://sunnah.com/bukhari:1417"
+      },
+      {
+        "quote": "Share the greeting of peace. The hadith describes salam as a way to strengthen love among believers.",
+        "source": "Сахих Муслим, 54a",
+        "url": "https://sunnah.com/muslim:54a"
+      },
+      {
+        "quote": "Helping someone through difficulty is a meaningful good deed. The hadith encourages support and easing hardship.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Seeking beneficial knowledge is worth the effort. Read thoughtfully, check sources, and ask a knowledgeable person about what is unclear.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Gentleness makes actions better. Try expressing the same idea calmly, without harshness or humiliation.",
+        "source": "Сахих Муслим, 2594a",
+        "url": "https://sunnah.com/muslim:2594a"
+      },
+      {
+        "quote": "Alhamdulillah expresses praise of Allah. The hadith describes the significance of these words, remembrance, prayer and patience.",
+        "source": "Сахих Муслим, 223",
+        "url": "https://sunnah.com/muslim:223"
+      }
+    ]
+  },
+  "knowledge": {
+    "eyebrow": "قراءة نافعة",
+    "title": "المعرفة والنفع",
+    "intro": "تذكيرات قصيرة ثابتة تساعدك على يوم هادئ.",
+    "today": "تأمل اليوم",
+    "filterAll": "الكل",
+    "filterDaily": "اليومي",
+    "filterHeart": "القلب",
+    "filterPractice": "العمل",
+    "read": "خطوة صغيرة اليوم",
+    "cards": [
+      {
+        "label": "السخاء",
+        "title": "الصدقة لا تنقص المال",
+        "text": "أخبر النبي ﷺ أن الصدقة لا تنقص المال. وقد تغذي المبادرة الصغيرة المنتظمة الشكر والعناية بالناس.",
+        "source": "صحيح مسلم، 2588",
+        "color": "#0b7160"
+      },
+      {
+        "label": "الذكر",
+        "title": "ابدأ صباحك بالذكر",
+        "text": "يدعو القرآن المؤمنين إلى ذكر الله كثيراً. بضع دقائق هادئة من الذكر الواعي يمكن أن تكون سنداً لطيفاً لليوم.",
+        "source": "القرآن، 33:41",
+        "color": "#946a25"
+      },
+      {
+        "label": "الليل",
+        "title": "وقت هادئ للتهجد",
+        "text": "صلاة الليل النافلة فرصة للتوجه إلى الله في الخلوة. ابدأ بالقليل ولا تجعل العبادة النافلة عبئاً لا يحتمل.",
+        "source": "القرآن، 17:79",
+        "color": "#53427c"
+      }
+    ],
+    "questEyebrow": "معرفة اليوم",
+    "questTitle": "افتح تذكيرًا واحدًا",
+    "questText": "افتح بطاقة وتحقق من مصدرها واختر خطوة صغيرة."
+  },
+  "assistant": {
+    "eyebrow": "مساعد متأنٍ",
+    "title": "دليل إسلامي",
+    "disclaimer": "هذا مساعد للمعلومات العامة وليس بديلاً عن عالم أو إمام.",
+    "inputLabel": "سؤالك",
+    "placeholder": "اكتب سؤالاً برفق…",
+    "connection": "ربط API بأمان",
+    "apiEyebrow": "تكامل",
+    "apiTitle": "ربط الذكاء الاصطناعي",
+    "apiHint": "للإنتاج استخدم خادماً آمناً خاصاً بك لحفظ مفتاح API. يبقى المفتاح أدناه في ذاكرة التبويب فقط.",
+    "endpoint": "عنوان نقطة النهاية",
+    "apiKey": "مفتاح API (اختياري)",
+    "model": "النموذج",
+    "greeting": "السلام عليكم. أجيب كمساعد معلوماتي فقط: من القرآن والأحاديث الصحيحة، دون إصدار فتاوى. كيف أساعدك؟",
+    "assistantLabel": "المساعد",
+    "youLabel": "أنت",
+    "offline": "وضع المعلومات المحلي الآمن مفعّل. اربط نقطة نهاية آمنة للحصول على إجابة النموذج.",
+    "error": "تعذر الحصول على إجابة. تحقق من العنوان وإعدادات CORS والخادم.",
+    "sourceOnly": "القرآن · مصادر صحيحة",
+    "quran": "القرآن",
+    "bukhari": "صحيح البخاري",
+    "muslim": "صحيح مسلم",
+    "footnote": "في المسألة الشخصية أو المختلف فيها، راجع إماماً محلياً موثوقاً.",
+    "thinking": "جارٍ التفكير",
+    "chips": [
+      "كيف أتوضأ؟",
+      "ما الذي يفسد الصوم؟",
+      "شروط إجابة الدعاء"
+    ]
+  },
+  "quran": {
+    "eyebrow": "استمع بانتباه",
+    "title": "القرآن الكريم",
+    "reciter": "القارئ",
+    "surah": "السورة",
+    "nowPlaying": "يعمل الآن",
+    "audioNote": "يُبث الصوت من مكتبات عامة خارجية، ويلزم اتصال بالإنترنت.",
+    "loading": "جارٍ تحميل الصوت…",
+    "audioError": "الصوت غير متاح. تحقق من الإنترنت أو اختر قارئاً آخر."
+  },
+  "settings": {
+    "eyebrow": "مساحتك",
+    "title": "الإعدادات والأسئلة",
+    "appearance": "المظهر",
+    "appearanceHint": "سمة فاتحة أو داكنة",
+    "language": "اللغة",
+    "languageHint": "الواجهة والمحتوى",
+    "install": "تثبيت التطبيق",
+    "installHint": "يعمل كتطبيق PWA على الهاتف",
+    "installUnavailable": "للتثبيت افتح الموقع في متصفح عبر HTTPS أو localhost.",
+    "experience": "التجربة",
+    "sound": "أصوات هادئة",
+    "soundHint": "نغمات للذكر والتبويبات والإنجازات",
+    "haptics": "استجابة لمسية",
+    "hapticsHint": "اهتزاز قصير عند الدعم",
+    "motion": "تقليل الحركة",
+    "motionHint": "انتقالات وتأثيرات أهدأ",
+    "languageSection": "اللغة والخط",
+    "appSection": "التطبيق والبيانات",
+    "installNow": "ثبّت الآن",
+    "readyToInstall": "جاهز للتثبيت",
+    "installed": "تم تثبيت Nur.",
+    "installedTitle": "Nur مثبت بالفعل",
+    "installedText": "أنت تستخدم التطبيق في وضع مستقل.",
+    "installedHint": "مثبت على هذا الجهاز",
+    "serverRequiredTitle": "افتح Nur عبر خادمه",
+    "serverRequiredText": "لا يستطيع الملف المفتوح مباشرة من جهازك تسجيل service worker، لذلك لا يمكن للمتصفح تثبيته كتطبيق PWA.",
+    "serverStep1": "افتح مجلد backend في الطرفية.",
+    "serverStep2": "شغّل: npm start",
+    "serverStep3": "افتح http://localhost:8080 ثم عد إلى التثبيت.",
+    "readyInstallTitle": "Nur جاهز للتثبيت",
+    "readyInstallText": "ثبّته لتجربة ملء الشاشة.",
+    "readyInstallStep": "استخدم زر ثبّت الآن أدناه.",
+    "iosInstallTitle": "أضف Nur إلى الشاشة الرئيسية",
+    "iosInstallText": "يُثبّت Safari تطبيقات الويب من قائمة المشاركة.",
+    "iosStep1": "افتح الصفحة في Safari.",
+    "iosStep2": "اضغط مشاركة.",
+    "iosStep3": "اختر إضافة إلى الشاشة الرئيسية ثم إضافة.",
+    "browserInstallTitle": "التثبيت من المتصفح",
+    "browserInstallText": "إن لم تظهر النافذة الأصلية، استخدم قائمة المتصفح: تثبيت التطبيق أو إضافة إلى الشاشة الرئيسية.",
+    "browserStep1": "تأكد من فتح الصفحة عبر HTTPS أو localhost.",
+    "browserStep2": "افتح قائمة المتصفح واختر تثبيت التطبيق.",
+    "browserStep3": "انتظر لحظة حتى ينتهي service worker من التثبيت.",
+    "export": "تصدير بياناتي المحلية",
+    "exportHint": "ملف نسخة احتياطية خاص على هذا الجهاز",
+    "exported": "تم تنزيل النسخة المحلية.",
+    "moderate": "إدارة القصص المرسلة",
+    "moderateHint": "يتطلب رمز إدارة الخادم",
+    "clearData": "مسح بيانات التطبيق المحلية",
+    "dataWarning": "بيانات الجهاز",
+    "clearNow": "مسح البيانات",
+    "darkTheme": "استخدم الوضع الداكن",
+    "lightTheme": "استخدم الوضع الفاتح"
+  },
+  "stories": {
+    "eyebrow": "مجتمع بإشراف حريص",
+    "title": "قصصكم",
+    "intro": "مكان هادئ لطرق الوصول إلى الإسلام والامتنان والدروس التي قد تنفع غيرك.",
+    "loading": "جارٍ تحميل القصص…",
+    "empty": "لا توجد قصص منشورة بعد. ستظهر أول قصة بعد الموافقة.",
+    "publishedCount": "المنشور: {count}",
+    "serverUnavailable": "تحتاج القصص إلى خادم Nur المرفق. شغّله ثم افتح التطبيق عبر localhost أو HTTPS.",
+    "share": "شارك قصتك",
+    "shareHint": "تُراجع كل مشاركة قبل النشر",
+    "notice": "لا تذكر أرقام هاتف أو عناوين أو وثائق أو أي تفاصيل شخصية حساسة.",
+    "formEyebrow": "أرسل للمراجعة",
+    "formTitle": "شارك بعناية",
+    "formIntro": "تبقى قصتك خاصة حتى تقدّمها وتُنشر بعد مراجعة المشرف.",
+    "author": "الاسم أو الاسم المستعار",
+    "storyTitle": "العنوان",
+    "body": "قصتك",
+    "consent": "أفهم أن هذه القصة ترسل إلى مشرف الموقع للمراجعة ويجب ألا تحتوي على معلومات شخصية حساسة.",
+    "submit": "أرسل للمراجعة",
+    "formInvalid": "أضف اسماً وعنواناً ونصاً من 20 حرفاً على الأقل وأكّد إشعار الخصوصية.",
+    "sending": "جارٍ الإرسال للمراجعة…",
+    "sent": "شكراً لك. أُرسلت قصتك إلى المراجعة.",
+    "sendError": "تعذّر إرسال القصة. تحقق من الخادم وحاول مرة أخرى."
+  },
+  "faq": {
+    "title": "أسئلة شائعة"
+  },
+  "more": {
+    "eyebrow": "المزيد",
+    "title": "المزيد في نور",
+    "intro": "وصول سريع إلى المساعد والإعدادات والتثبيت وأدوات المجتمع.",
+    "assistant": "المساعد",
+    "assistantHint": "اطرح سؤالًا مرجعيًا بعناية",
+    "settings": "الإعدادات",
+    "settingsHint": "المظهر واللغة والأصوات والبيانات",
+    "install": "تثبيت نور",
+    "installHint": "استخدم نور كتطبيق على هاتفك",
+    "moderator": "الإشراف",
+    "moderatorHint": "راجع القصص المرسلة من المجتمع",
+    "note": "يبقى العداد والتفضيلات المحلية في هذا المتصفح. تُدار القصص المنشورة عبر خادم نور."
+  },
+  "meta": {
+    "title": "نور — عبادة واعية"
+  },
+  "new": {
+    "free": "تسبيح حر",
+    "tap": "المس الدائرة",
+    "count": "عد الذكر",
+    "reset": "تصفير العداد",
+    "focus": "الدائرة فقط",
+    "exit": "خروج",
+    "completed": "اكتملت الجولة",
+    "restart": "جولة جديدة",
+    "search": "ابحث عن تذكير",
+    "noResults": "لم يتم العثور على نتائج",
+    "soundStyle": "صوت اللمس",
+    "soft": "هادئ",
+    "wood": "خشب",
+    "bell": "قطرة"
+  }
+}

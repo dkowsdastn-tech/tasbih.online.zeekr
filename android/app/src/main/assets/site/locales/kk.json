@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "tasbih": "Тасбих",
+    "sunna": "Сүннет",
+    "knowledge": "Білім",
+    "assistant": "ЖИ",
+    "quran": "Құран",
+    "settings": "Тағы",
+    "more": "Тағы",
+    "stories": "Историялар"
+  },
+  "common": {
+    "save": "Сақтау",
+    "cancel": "Болдырмау",
+    "close": "Жабу"
+  },
+  "tasbih": {
+    "eyebrow": "Саналы құлшылық",
+    "title": "Ақылды тасбих",
+    "save": "Сақтау",
+    "chooseDhikr": "Зікірді таңдаңыз",
+    "tap": "зікір үшін түртіңіз",
+    "reset": "Қайтару",
+    "savedToday": "Бүгін сақталғаны: {count}",
+    "saved": "Нәтиже құрылғыда сақталды",
+    "resetDone": "Есептегіш тазартылды",
+    "goalDone": "МашаАлла! {goal} мақсатына жеттіңіз.",
+    "dhikrs": [
+      {
+        "arabic": "سُبْحَانَ ٱللَّٰهِ",
+        "label": "Субханаллаһ",
+        "transcription": "SubḥānAllāh"
+      },
+      {
+        "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+        "label": "Әлхамдулиллаһ",
+        "transcription": "Alḥamdulillāh"
+      },
+      {
+        "arabic": "ٱللَّٰهُ أَكْبَرُ",
+        "label": "Аллаһу әкбар",
+        "transcription": "Allāhu Akbar"
+      },
+      {
+        "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+        "label": "Лә иләһә иллә-Ллаһ",
+        "transcription": "Lā ilāha illā-llāh"
+      }
+    ],
+    "private": "Тек осы құрылғыда",
+    "currentPractice": "Қазіргі практика",
+    "choosePractice": "Зікірлер мен топтамалар",
+    "collectionsEyebrow": "Практиканы таңдаңыз",
+    "collectionsTitle": "Зікірлер мен топтамалар",
+    "collectionsIntro": "Құрылымды топтаманы таңдаңыз немесе еркін санауды қолданыңыз.",
+    "freePrompt": "Дайын болғанда зікір топтамасын таңдаңыз.",
+    "ready": "Сабырлы санау — тек осы браузерде сақталады.",
+    "nothingToSave": "Алдымен бірнеше рет санап, содан кейін сақтаңыз.",
+    "practiceSelected": "Таңдалды: {name}",
+    "nextStep": "Келесі: {phrase}"
+  },
+  "scratch": {
+    "eyebrow": "Бүгінгі шағын Сүннет",
+    "title": "Өшіріп біліңіз",
+    "intro": "Саусағыңызды жабынның үстімен жүргізіңіз — жүрекке жылы ескерту ашылады.",
+    "hint": "Осы жерді өшіріңіз",
+    "revealed": "ашылды",
+    "new": "Жаңа карта",
+    "complete": "Ескерту толық ашылды ✦",
+    "sourceNote": "Бұлар қысқаша мазмұн; түпнұсқадағы тұжырымды тексеріңіз.",
+    "sunnahs": [
+      {
+        "quote": "Ешбір игі істі елеме, тіпті бауырыңды жарқын жүзбен қарсы алуды да.",
+        "source": "Сахих Муслим, 2626"
+      },
+      {
+        "quote": "Алла барлық істе жұмсақтықты жақсы көреді.",
+        "source": "Сахих әл-Бұхари, 6927; Сахих Муслим, 2165"
+      },
+      {
+        "quote": "Мейірім көрсетпегенге мейірім көрсетілмейді.",
+        "source": "Сахих әл-Бұхари, 6013; Сахих Муслим, 2318"
+      },
+      {
+        "quote": "Сендердің ең жақсыларың — көркем мінезділерің.",
+        "source": "Сахих әл-Бұхари, 6035"
+      },
+      {
+        "quote": "Pause before an ordinary task and consider the good you intend. The hadith connects deeds with intentions.",
+        "source": "Сахих аль-Бухари, 1",
+        "url": "https://sunnah.com/bukhari:1"
+      },
+      {
+        "quote": "Choose a manageable good deed and return to it regularly. The hadith values consistency even in small deeds.",
+        "source": "Сахих аль-Бухари, 6464",
+        "url": "https://sunnah.com/bukhari:6464"
+      },
+      {
+        "quote": "Mention Allah’s name, eat with your right hand, and take what is nearest to you in a shared dish.",
+        "source": "Сахих аль-Бухари, 5376",
+        "url": "https://sunnah.com/bukhari:5376"
+      },
+      {
+        "quote": "Let your words bring good. When there is nothing good to say, silence can help prevent harmful speech.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "The hadith connects faith with avoiding harm to neighbours and treating guests generously.",
+        "source": "Сахих аль-Бухари, 6018",
+        "url": "https://sunnah.com/bukhari:6018"
+      },
+      {
+        "quote": "Make ablution before bed and lie on your right side. Both actions appear in the Prophet’s guidance.",
+        "source": "Сахих аль-Бухари, 6311",
+        "url": "https://sunnah.com/bukhari:6311"
+      },
+      {
+        "quote": "Do not postpone charity just because you can give only a little. The hadith mentions even half a date.",
+        "source": "Сахих аль-Бухари, 1417",
+        "url": "https://sunnah.com/bukhari:1417"
+      },
+      {
+        "quote": "Share the greeting of peace. The hadith describes salam as a way to strengthen love among believers.",
+        "source": "Сахих Муслим, 54a",
+        "url": "https://sunnah.com/muslim:54a"
+      },
+      {
+        "quote": "Helping someone through difficulty is a meaningful good deed. The hadith encourages support and easing hardship.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Seeking beneficial knowledge is worth the effort. Read thoughtfully, check sources, and ask a knowledgeable person about what is unclear.",
+        "source": "Сахих Муслим, 2699a",
+        "url": "https://sunnah.com/muslim:2699a"
+      },
+      {
+        "quote": "Gentleness makes actions better. Try expressing the same idea calmly, without harshness or humiliation.",
+        "source": "Сахих Муслим, 2594a",
+        "url": "https://sunnah.com/muslim:2594a"
+      },
+      {
+        "quote": "Alhamdulillah expresses praise of Allah. The hadith describes the significance of these words, remembrance, prayer and patience.",
+        "source": "Сахих Муслим, 223",
+        "url": "https://sunnah.com/muslim:223"
+      }
+    ],
+    "safe": "Саусақпен жұмыс істейді",
+    "reveal": "Карточканы ашу",
+    "manualComplete": "Карточка ашылды ✦"
+  },
+  "knowledge": {
+    "eyebrow": "Пайдалы оқу",
+    "title": "Білім мен пайда",
+    "intro": "Карталарды сырғытып оқыңыз, маңыздысын сақтап, қажет кезде қайта оралыңыз.",
+    "read": "Бүгінгі кішкентай қадам",
+    "cards": [
+      {
+        "label": "Жомарттық",
+        "title": "Садақа малды кемітпейді",
+        "text": "Пайғамбар ﷺ садақа малды кемітпейтінін айтқан. Шағын әрі тұрақты көмек те шүкіршілік пен адамдарға қамқорлықты тәрбиелейді.",
+        "source": "Сахих Муслим, 2588",
+        "color": "#0b7160"
+      },
+      {
+        "label": "Зікір",
+        "title": "Таңды зікірмен бастаңыз",
+        "text": "Құран мүміндерді Алланы көп еске алуға шақырады. Саналы зікірге арналған бірнеше тыныш минут күнге нәзік тірек бола алады.",
+        "source": "Құран, 33:41",
+        "color": "#946a25"
+      },
+      {
+        "label": "Түн",
+        "title": "Тахажжудтың тыныш уақыты",
+        "text": "Түнгі нәпіл намаз — Аллаға оңаша жүгінудің мүмкіндігі. Аздан бастаңыз және нәпіл құлшылықты ауыр міндетке айналдырмаңыз.",
+        "source": "Құран, 17:79",
+        "color": "#53427c"
+      }
+    ],
+    "questEyebrow": "БҮГІНГІ БІЛІМ",
+    "questTitle": "Бір ескертуді ашыңыз",
+    "questText": "Карточканы ашып, дереккөзін тексеріп, бір шағын қадам таңдаңыз.",
+    "today": "Бүгінгі ой",
+    "filterAll": "Барлығы",
+    "filterDaily": "Күнделікті",
+    "filterHeart": "Жүрек",
+    "filterPractice": "Практика"
+  },
+  "assistant": {
+    "eyebrow": "Ізгі көмекші",
+    "title": "Исламдық ЖИ",
+    "disclaimer": "Бұл анықтамалық көмекші, ғалымның не имамның орнын баспайды.",
+    "inputLabel": "Сұрағыңыз",
+    "placeholder": "Ізгі сұрақ қойыңыз…",
+    "connection": "API-ді қауіпсіз қосу",
+    "apiEyebrow": "Интеграция",
+    "apiTitle": "ЖИ қосу",
+    "apiHint": "Продакшн үшін API кілтін сақтайтын өзіңіздің қорғалған серверіңізді қолданыңыз. Төмендегі кілт тек осы бет жадысында қалады.",
+    "endpoint": "Endpoint мекенжайы",
+    "apiKey": "API кілті (міндетті емес)",
+    "model": "Модель",
+    "greeting": "Ассаламу алейкум. Мен тек анықтамалық көмекші ретінде — Құран мен сахих хадистер негізінде, пәтуасыз жауап беремін. Қалай көмектесе аламын?",
+    "assistantLabel": "Көмекші",
+    "youLabel": "Сіз",
+    "offline": "Қауіпсіз жергілікті режим қосулы. Модель жауабын алу үшін қорғалған endpoint қосыңыз.",
+    "error": "Жауап алу мүмкін болмады. Endpoint, CORS және сервер баптауларын тексеріңіз.",
+    "chips": [
+      "Дәретті қалай аламын?",
+      "Оразаны не бұзады?",
+      "Дұғаның қабыл болу шарттары"
+    ],
+    "sourceOnly": "Құран · сахих дереккөздер",
+    "quran": "Құран",
+    "bukhari": "Сахих әл-Бұхари",
+    "muslim": "Сахих Муслим",
+    "thinking": "Анықтамалық жауап дайындалуда",
+    "footnote": "Жеке не даулы мәселе бойынша білікті жергілікті имамға жүгініңіз."
+  },
+  "quran": {
+    "eyebrow": "Зейін қойып тыңдаңыз",
+    "title": "Қасиетті Құран",
+    "reciter": "Қари",
+    "surah": "Сүре",
+    "nowPlaying": "Қазір ойнатылып тұр",
+    "audioNote": "Аудио ашық сыртқы кітапханалардан беріледі; интернет қосылымы қажет.",
+    "loading": "Аудио жүктелуде…",
+    "audioError": "Аудио қолжетімсіз. Интернетті тексеріңіз немесе басқа қариды таңдаңыз."
+  },
+  "settings": {
+    "eyebrow": "Сіздің кеңістігіңіз",
+    "title": "Баптаулар және FAQ",
+    "appearance": "Көрініс",
+    "appearanceHint": "Ашық не қараңғы тақырып",
+    "language": "Тіл",
+    "languageHint": "Интерфейс пен мазмұн",
+    "install": "Қолданбаны орнату",
+    "installHint": "Телефонда PWA ретінде жұмыс істейді",
+    "installUnavailable": "Орнату үшін сайтты HTTPS не localhost арқылы браузерде ашыңыз.",
+    "experience": "Қолдану",
+    "sound": "Жұмсақ дыбыстар",
+    "soundHint": "Зікірге, қойындыларға және мақсаттарға арналған дыбыстар",
+    "haptics": "Діріл кері байланысы",
+    "hapticsHint": "Қолдаса, қысқа діріл",
+    "motion": "Қозғалысты азайту",
+    "motionHint": "Жұмсақ ауысулар мен әсерлер",
+    "languageSection": "Тіл және мәтін",
+    "appSection": "Қолданба және деректер",
+    "installNow": "Қазір орнату",
+    "readyToInstall": "Орнатуға дайын",
+    "installed": "Nur орнатылды.",
+    "installedTitle": "Nur орнатылған",
+    "installedText": "Қолданбаның дербес нұсқасын пайдаланып отырсыз.",
+    "installedHint": "Осы құрылғыда орнатылған",
+    "serverRequiredTitle": "Nur-ды сервер арқылы ашыңыз",
+    "serverRequiredText": "Компьютерде файлды тікелей ашу service worker-ді тіркей алмайды, сондықтан PWA ретінде орнату мүмкін емес.",
+    "serverStep1": "Терминалда backend бумасын ашыңыз.",
+    "serverStep2": "Орындаңыз: npm start",
+    "serverStep3": "http://localhost:8080 мекенжайын ашып, орнатуға қайта оралыңыз.",
+    "readyInstallTitle": "Nur орнатуға дайын",
+    "readyInstallText": "Толық экранды, қолданбаға ұқсас режим үшін орнатыңыз.",
+    "readyInstallStep": "Төмендегі «Қазір орнату» түймесін пайдаланыңыз.",
+    "iosInstallTitle": "Nur-ды негізгі экранға қосыңыз",
+    "iosInstallText": "Safari веб-қолданбаларды «Бөлісу» мәзірі арқылы орнатады.",
+    "iosStep1": "Бұл бетті Safari-де ашыңыз.",
+    "iosStep2": "«Бөлісу» түймесін басыңыз.",
+    "iosStep3": "«Негізгі экранға» → «Қосу» таңдаңыз.",
+    "browserInstallTitle": "Браузер арқылы орнату",
+    "browserInstallText": "Жүйелік терезе дайын болмаса, браузер мәзірінен «Қолданбаны орнату» немесе «Негізгі экранға қосу» таңдаңыз.",
+    "browserStep1": "Бет HTTPS немесе localhost арқылы ашылғанын тексеріңіз.",
+    "browserStep2": "Браузер мәзірін ашып, қолданбаны орнатуды таңдаңыз.",
+    "browserStep3": "Бетті жаңа ашсаңыз, service worker орнатылуына сәл уақыт беріңіз.",
+    "export": "Жергілікті деректерімді экспорттау",
+    "exportHint": "Осы құрылғыдағы жеке сақтық көшірме",
+    "exported": "Жергілікті көшірме жүктелді.",
+    "moderate": "Жіберілген тарихтарды модерациялау",
+    "moderateHint": "Сервер әкімшісінің токені қажет",
+    "clearData": "Қолданбаның жергілікті деректерін тазалау",
+    "dataWarning": "Құрылғы деректері",
+    "clearNow": "Деректерді тазалау",
+    "darkTheme": "Қараңғы тақырыпты қолдану",
+    "lightTheme": "Ашық тақырыпты қолдану"
+  },
+  "faq": {
+    "title": "Жиі қойылатын сұрақтар"
+  },
+  "more": {
+    "eyebrow": "Қосымша",
+    "title": "Nur ішіндегі қосымша",
+    "intro": "Көмекшіге, баптауларға, орнатуға және қауымдастық құралдарына жылдам қолжетім.",
+    "assistant": "Көмекші",
+    "assistantHint": "Анықтамалық сұрақ қойыңыз",
+    "settings": "Баптаулар",
+    "settingsHint": "Тақырып, тіл, дыбыстар және деректер",
+    "install": "Nur орнату",
+    "installHint": "Nur-ды телефонда қолданба сияқты пайдаланыңыз",
+    "moderator": "Модерация",
+    "moderatorHint": "Қауымдастық жіберген тарихтарды тексеру",
+    "note": "Жергілікті санағыш пен баптаулар осы браузерде қалады. Жарияланған тарихтарды Nur сервері басқарады."
+  },
+  "stories": {
+    "eyebrow": "Мұқият модерацияланатын қауымдастық",
+    "title": "Сіздің тарихтарыңыз",
+    "intro": "Исламға сапар, шүкіршілік немесе басқа адамға қолдау бола алатын маңызды сабақ туралы тыныш кеңістік.",
+    "loading": "Тарихтар жүктелуде…",
+    "publishedCount": "Жарияланды: {count}",
+    "empty": "Әзірге жарияланған тарихтар жоқ. Алғашқысы мақұлданғаннан кейін осында шығады.",
+    "serverUnavailable": "Тарихтарға Nur сервері қажет. Оны іске қосып, қолданбаны localhost немесе HTTPS домені арқылы ашыңыз.",
+    "share": "Тарих бөлісу",
+    "shareHint": "Әр жіберілім жарияланар алдында тексеріледі",
+    "notice": "Телефон, мекенжай, құжат немесе басқа сезімтал жеке мәліметтерді қоспаңыз.",
+    "formEyebrow": "Тексеруге жіберу",
+    "formTitle": "Абайлап бөлісіңіз",
+    "formIntro": "Тарихыңыз сіз оны жіберіп, модератор жарияламайынша көпшілікке көрінбейді.",
+    "author": "Аты немесе лақап аты",
+    "storyTitle": "Тақырып",
+    "body": "Тарихыңыз",
+    "consent": "Тарих сайт модераторына тексеруге жіберілетінін түсінемін және онда сезімтал жеке мәліметтер болмауы керек.",
+    "submit": "Тексеруге жіберу",
+    "formInvalid": "Аты-жөніңізді, тақырыпты, кемінде 20 таңбаны енгізіп, құпиялылық туралы хабарламаны растаңыз.",
+    "sending": "Тексеруге жіберілуде…",
+    "sent": "Рақмет. Тарих модерацияға жіберілді.",
+    "sendError": "Тарихты жіберу мүмкін болмады. Серверді тексеріп, қайталап көріңіз."
+  },
+  "meta": {
+    "title": "Nur — саналы практика"
+  },
+  "new": {
+    "free": "Еркін тасбих",
+    "tap": "шеңберді түртіңіз",
+    "count": "Зікір санау",
+    "reset": "Санағышты тазалау",
+    "focus": "Тек шеңбер",
+    "exit": "Шығу",
+    "completed": "Айналым аяқталды",
+    "restart": "Жаңа айналым",
+    "search": "Еске салуды іздеу",
+    "noResults": "Ештеңе табылмады.",
+    "soundStyle": "Түрту дыбысы",
+    "soft": "Жұмсақ",
+    "wood": "Ағаш",
+    "bell": "Тамшы"
+  }
+}
