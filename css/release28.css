@@ -29,3 +29,21 @@
 @media(prefers-reduced-motion:reduce){.reader-opening-cover,.page-leaf{display:none!important}}
 html[data-reduce-motion=true] .reader-opening-cover,html[data-reduce-motion=true] .page-leaf{display:none!important}
 .topbar .language-picker{width:90px;min-width:90px;position:relative;flex-shrink:0;border-radius:20px}.topbar .language-picker select{opacity:1!important;position:static!important;inset:auto!important;height:100%;cursor:pointer}
+
+/* Short, composited transitions: no layout animation while counting. */
+.screen.active{animation:screen-settle .36s cubic-bezier(.2,.75,.25,1)}
+#countButton.tap-wave .tasbih-number{animation:number-press .22s cubic-bezier(.2,.7,.2,1)}
+.practice-choice[open] .choice-content{animation:menu-unfold .3s cubic-bezier(.2,.75,.25,1)}
+.modal[open]{animation:dialog-settle .32s cubic-bezier(.2,.8,.25,1)}
+.modal::backdrop{animation:backdrop-settle .24s ease-out}
+.faq-section details[open]>p{animation:menu-unfold .28s ease-out}
+.nav-item{transition:background-color .24s ease,color .24s ease}
+.nav-item img{transition:transform .24s cubic-bezier(.2,.8,.2,1)}
+.nav-item.active img{transform:translateY(-2px)}
+@keyframes screen-settle{from{opacity:.3;transform:translateY(9px)}to{opacity:1;transform:none}}
+@keyframes number-press{0%{transform:scale(1)}38%{transform:scale(.96)}100%{transform:scale(1)}}
+@keyframes menu-unfold{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:none}}
+@keyframes dialog-settle{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes backdrop-settle{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.screen.active,#countButton .tasbih-number,.practice-choice .choice-content,.modal,.modal::backdrop,.faq-section details>p{animation:none!important}.nav-item,.nav-item img{transition:none!important}}
+html[data-reduce-motion=true] .screen.active,html[data-reduce-motion=true] #countButton .tasbih-number,html[data-reduce-motion=true] .practice-choice .choice-content,html[data-reduce-motion=true] .modal,html[data-reduce-motion=true] .modal::backdrop,html[data-reduce-motion=true] .faq-section details>p{animation:none!important}
