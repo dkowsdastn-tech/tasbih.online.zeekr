@@ -248,19 +248,19 @@
     "appSection": "Uygulama ve veriler",
     "installNow": "Şimdi yükle",
     "readyToInstall": "Yüklemeye hazır",
-    "installed": "Nur yüklendi.",
-    "installedTitle": "Nur zaten yüklü",
+    "installed": "Tasbih Online yüklendi.",
+    "installedTitle": "Tasbih Online zaten yüklü",
     "installedText": "Uygulamanın bağımsız sürümünü kullanıyorsunuz.",
     "installedHint": "Bu cihaza yüklendi",
-    "serverRequiredTitle": "Nur’u sunucu üzerinden açın",
+    "serverRequiredTitle": "Tasbih Online’u sunucu üzerinden açın",
     "serverRequiredText": "Bilgisayarda doğrudan açılan bir dosya service worker kaydedemez; bu yüzden PWA kurulamaz.",
     "serverStep1": "Terminalde backend klasörünü açın.",
     "serverStep2": "Şunu çalıştırın: npm start",
     "serverStep3": "http://localhost:8080 adresini açın ve kuruluma dönün.",
-    "readyInstallTitle": "Nur yüklemeye hazır",
+    "readyInstallTitle": "Tasbih Online yüklemeye hazır",
     "readyInstallText": "Tam ekran, uygulama benzeri kullanım için yükleyin.",
     "readyInstallStep": "Aşağıdaki “Şimdi yükle” düğmesini kullanın.",
-    "iosInstallTitle": "Nur’u Ana Ekranınıza ekleyin",
+    "iosInstallTitle": "Tasbih Online’u Ana Ekranınıza ekleyin",
     "iosInstallText": "Safari web uygulamalarını Paylaş menüsünden yükler.",
     "iosStep1": "Bu sayfayı Safari’de açın.",
     "iosStep2": "Paylaş’a dokunun.",
@@ -286,17 +286,17 @@
   },
   "more": {
     "eyebrow": "Diğer",
-    "title": "Nur’da diğerleri",
+    "title": "Tasbih Online’da diğerleri",
     "intro": "Yardımcıya, ayarlara, kuruluma ve topluluk araçlarına hızlı erişim.",
     "assistant": "Yardımcı",
     "assistantHint": "Dikkatli bir referans sorusu sorun",
     "settings": "Ayarlar",
     "settingsHint": "Tema, dil, sesler ve veriler",
-    "install": "Nur’u yükle",
-    "installHint": "Nur’u telefonunuzda uygulama gibi kullanın",
+    "install": "Tasbih Online’u yükle",
+    "installHint": "Tasbih Online’u telefonunuzda uygulama gibi kullanın",
     "moderator": "Moderasyon",
     "moderatorHint": "Topluluktan gelen hikâyeleri inceleyin",
-    "note": "Yerel sayaç ve tercihler bu tarayıcıda kalır. Yayınlanan hikâyeler Nur sunucusu tarafından yönetilir."
+    "note": "Yerel sayaç ve tercihler bu tarayıcıda kalır. Yayınlanan hikâyeler Tasbih Online sunucusu tarafından yönetilir."
   },
   "stories": {
     "eyebrow": "Özenle denetlenen topluluk",
@@ -305,7 +305,7 @@
     "loading": "Hikâyeler yükleniyor…",
     "publishedCount": "Yayınlanan: {count}",
     "empty": "Henüz yayınlanan hikâye yok. Onaylanan ilk hikâye burada görünecek.",
-    "serverUnavailable": "Hikâyeler için Nur sunucusu gerekir. Sunucuyu başlatıp uygulamayı localhost veya HTTPS alan adından açın.",
+    "serverUnavailable": "Hikâyeler için Tasbih Online sunucusu gerekir. Sunucuyu başlatıp uygulamayı localhost veya HTTPS alan adından açın.",
     "share": "Hikâye paylaş",
     "shareHint": "Her gönderi yayınlanmadan önce incelenir",
     "notice": "Telefon numarası, adres, belge veya diğer hassas kişisel bilgileri eklemeyin.",
@@ -323,6 +323,6 @@
     "sendError": "Hikâye gönderilemedi. Sunucuyu kontrol edip tekrar deneyin."
   },
   "meta": {
-    "title": "Nur — bilinçli pratik"
+    "title": "Tasbih Online — bilinçli pratik"
   }
 }

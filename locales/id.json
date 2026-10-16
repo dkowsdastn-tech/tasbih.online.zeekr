@@ -248,19 +248,19 @@
     "appSection": "Aplikasi dan data",
     "installNow": "Instal sekarang",
     "readyToInstall": "Siap diinstal",
-    "installed": "Nur telah diinstal.",
-    "installedTitle": "Nur sudah terinstal",
+    "installed": "Tasbih Online telah diinstal.",
+    "installedTitle": "Tasbih Online sudah terinstal",
     "installedText": "Anda menggunakan versi aplikasi mandiri.",
     "installedHint": "Terinstal di perangkat ini",
-    "serverRequiredTitle": "Buka Nur melalui server",
+    "serverRequiredTitle": "Buka Tasbih Online melalui server",
     "serverRequiredText": "File yang dibuka langsung dari komputer tidak dapat mendaftarkan service worker, sehingga PWA tidak dapat diinstal.",
     "serverStep1": "Buka folder backend di terminal.",
     "serverStep2": "Jalankan: npm start",
     "serverStep3": "Buka http://localhost:8080, lalu kembali untuk menginstal.",
-    "readyInstallTitle": "Nur siap diinstal",
+    "readyInstallTitle": "Tasbih Online siap diinstal",
     "readyInstallText": "Instal untuk pengalaman layar penuh seperti aplikasi.",
     "readyInstallStep": "Gunakan tombol “Instal sekarang” di bawah.",
-    "iosInstallTitle": "Tambahkan Nur ke Layar Utama",
+    "iosInstallTitle": "Tambahkan Tasbih Online ke Layar Utama",
     "iosInstallText": "Safari memasang aplikasi web dari menu Bagikan.",
     "iosStep1": "Buka halaman ini di Safari.",
     "iosStep2": "Ketuk Bagikan.",
@@ -286,17 +286,17 @@
   },
   "more": {
     "eyebrow": "Lainnya",
-    "title": "Lainnya di Nur",
+    "title": "Lainnya di Tasbih Online",
     "intro": "Akses cepat ke pembantu, pengaturan, instalasi, dan fitur komunitas.",
     "assistant": "Pembantu",
     "assistantHint": "Ajukan pertanyaan referensi dengan bijak",
     "settings": "Pengaturan",
     "settingsHint": "Tema, bahasa, suara, dan data",
-    "install": "Instal Nur",
-    "installHint": "Gunakan Nur seperti aplikasi di ponsel",
+    "install": "Instal Tasbih Online",
+    "installHint": "Gunakan Tasbih Online seperti aplikasi di ponsel",
     "moderator": "Moderasi",
     "moderatorHint": "Tinjau cerita komunitas yang dikirim",
-    "note": "Penghitung dan preferensi lokal tetap di browser ini. Cerita yang diterbitkan dikelola oleh server Nur."
+    "note": "Penghitung dan preferensi lokal tetap di browser ini. Cerita yang diterbitkan dikelola oleh server Tasbih Online."
   },
   "stories": {
     "eyebrow": "Komunitas dengan moderasi yang cermat",
@@ -305,7 +305,7 @@
     "loading": "Memuat cerita…",
     "publishedCount": "Diterbitkan: {count}",
     "empty": "Belum ada cerita yang diterbitkan. Cerita pertama akan muncul setelah disetujui.",
-    "serverUnavailable": "Cerita memerlukan server Nur. Jalankan server lalu buka aplikasi melalui localhost atau domain HTTPS.",
+    "serverUnavailable": "Cerita memerlukan server Tasbih Online. Jalankan server lalu buka aplikasi melalui localhost atau domain HTTPS.",
     "share": "Bagikan cerita",
     "shareHint": "Setiap kiriman ditinjau sebelum diterbitkan",
     "notice": "Jangan sertakan nomor telepon, alamat, dokumen, atau data pribadi sensitif lainnya.",
@@ -323,6 +323,6 @@
     "sendError": "Cerita tidak dapat dikirim. Periksa server lalu coba lagi."
   },
   "meta": {
-    "title": "Nur — praktik yang sadar"
+    "title": "Tasbih Online — praktik yang sadar"
   }
 }

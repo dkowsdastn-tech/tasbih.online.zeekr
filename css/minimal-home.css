@@ -244,3 +244,6 @@ html[data-reduce-motion="true"] #tasbih .tasbih-orbit {
   color: inherit;
   text-underline-offset: 3px;
 }
+
+.nur-intro{max-width:620px;margin:24px auto;padding:18px;text-align:center}.nur-intro h2{font-size:1.12rem;line-height:1.4}.nur-intro p,.nur-intro nav{font-size:.85rem;line-height:1.7}.nur-intro a{color:inherit;text-underline-offset:3px}.app-shell.focus-mode .nur-intro{display:none}
+

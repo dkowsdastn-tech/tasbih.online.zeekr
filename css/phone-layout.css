@@ -1,0 +1,123 @@
+/* Phone layout and Safari fallbacks. Loaded after the existing visual styles. */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --phone-height: 100vh;
+  --header-height: calc(60px + var(--safe-top));
+  --dock-height: calc(66px + var(--safe-bottom));
+}
+@supports (height: 100svh) { :root { --phone-height: 100svh; } }
+html { overflow-x: hidden; scroll-padding-bottom: calc(var(--dock-height) + 24px); }
+body { min-height: var(--phone-height); overflow-x: hidden; overscroll-behavior-y: auto; }
+.app-shell { width: 100%; min-height: var(--phone-height); overflow: hidden; }
+.topbar {
+  height: var(--header-height); min-height: var(--header-height);
+  padding: calc(10px + var(--safe-top)) max(18px, env(safe-area-inset-right)) 10px max(18px, env(safe-area-inset-left));
+  align-items: center;
+}
+#appMain { min-height: 0; }
+.screen { min-height: calc(var(--phone-height) - var(--header-height)); padding: 16px max(18px, env(safe-area-inset-right)) calc(var(--dock-height) + 28px) max(18px, env(safe-area-inset-left)); }
+.screen:not(.active) { display: none !important; }
+.screen h1 { margin-top: 4px; overflow-wrap: anywhere; }
+.bottom-nav {
+  min-height: var(--dock-height); height: var(--dock-height) !important;
+  padding: 8px max(6px, env(safe-area-inset-right)) calc(8px + var(--safe-bottom)) max(6px, env(safe-area-inset-left)) !important;
+  align-items: center; box-sizing: border-box;
+}
+.nav-item { width: 100%; height: 48px; min-height: 44px; align-items: center; justify-content: center; }
+.nav-item small { font-size: 12px !important; line-height: 1.3; }
+button { -webkit-appearance: none; appearance: none; }
+button, summary, select, a { -webkit-tap-highlight-color: transparent; }
+button, select, input, textarea { max-width: 100%; }
+button:focus:not(:focus-visible) { outline: none; }
+#tasbih.active {
+  min-height: calc(var(--phone-height) - var(--header-height) - var(--dock-height));
+  padding: 12px max(18px, env(safe-area-inset-right)) calc(var(--dock-height) + 18px) max(18px, env(safe-area-inset-left));
+  gap: 0;
+}
+#tasbih .tasbih-heading { padding: 0; margin: 0 0 4px; width: 100%; }
+#tasbih .tasbih-heading h1 { padding: 0; margin: 0; font-size: 20px; line-height: 1.5; }
+#tasbih #countButton {
+  width: 100%; height: clamp(210px, calc(var(--phone-height) - var(--header-height) - var(--dock-height) - 140px), 430px);
+  flex-shrink: 0; min-height: 210px; padding: 0; overflow: visible;
+}
+#countButton::before {
+  width: min(72vw, 300px, calc(var(--phone-height) - 240px));
+  height: min(72vw, 300px, calc(var(--phone-height) - 240px));
+}
+#countButton .tasbih-number { font-variant-numeric: tabular-nums; font-size: clamp(58px, 19vw, 86px) !important; }
+#countButton .count-caption { position: static; font-size: 13px; line-height: 1.5; }
+.practice-choice { margin: 10px auto 0; flex-shrink: 0; }
+.practice-choice summary { min-height: 52px; padding: 15px 17px; }
+#tasbih .practice-choice .tasbih-header-actions {
+  position: static; inset: auto; flex-direction: row; width: 100%;
+  align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;
+}
+#tasbih .practice-choice .tasbih-header-actions .icon-action { width: auto; min-width: 110px; min-height: 44px; height: auto; padding: 10px 13px; }
+#tasbih .practice-choice .tasbih-actions { margin: 0; width: 100%; }
+.practice-choice .choice-content { padding: 0 14px 14px; }
+#choosePractice { width: 100%; min-height: 46px; }
+.practice-panel { min-width: 0; overflow-wrap: anywhere; }
+.practice-panel-header { flex-wrap: wrap; }
+.arabic-phrase { overflow-wrap: normal; word-break: normal; }
+.practice-choice .practice-step { display: none; }
+#scratch .scratch-card { height: auto; min-height: 0; max-height: none; overflow: visible; }
+#scratch .sunna-content {
+  position: relative; inset: auto; height: auto; min-height: 270px;
+  padding: 26px 23px; overflow: visible; transform: none !important;
+}
+#scratch .sunna-content::before { display: none; }
+#scratch .sunna-content blockquote { font: 600 23px/1.55 Manrope, system-ui, sans-serif; margin: 15px 0; overflow-wrap: anywhere; }
+#scratch .sunna-content cite { font-size: 12px; line-height: 1.65; }
+#scratch .scratch-card.revealed { animation: none; }
+.book-cover { min-width: 0; overflow-wrap: anywhere; min-height: 210px; }
+.book-cover strong, .book-cover:nth-child(3) strong { font-size: clamp(19px, 5.8vw, 23px); }
+.book-reader { min-height: 0; padding: 22px; overflow-wrap: anywhere; }
+.reader-head { align-items: center; gap: 12px; }
+.reader-head small { text-align: end; line-height: 1.5; }
+.reader-head button { flex-shrink: 0; }
+.reader-page { min-height: 0; }
+.reader-page h2 { font-size: 25px; line-height: 1.3; }
+.reader-controls { gap: 14px; }
+.reader-controls button { min-width: 90px; min-height: 46px; }
+.settings-card { align-items: center; gap: 12px; padding: 17px; }
+.settings-card > div { min-width: 0; }
+.settings-card h3, .settings-card p { overflow-wrap: anywhere; }
+.settings-card select { width: 42%; max-width: 150px; font-size: 16px; }
+.settings-card .switch { width: 48px; min-width: 48px; height: 30px; flex-shrink: 0; }
+.language-setting { flex-wrap: wrap; }
+.language-setting select { width: 100%; max-width: none; min-height: 44px; }
+#quran .select-field { width: 100%; min-height: 52px; padding: 12px; font-size: 16px; }
+.modal { max-height: calc(var(--phone-height) - var(--safe-top) - var(--safe-bottom) - 24px); margin: auto; padding: 25px 20px; -webkit-overflow-scrolling: touch; }
+.modal form { min-width: 0; }
+.practice-list { min-width: 0; }
+.practice-option { grid-template-columns: minmax(0, 1fr) auto; height: auto; min-height: 68px; align-items: center; }
+.practice-option > span:first-child {
+  display: block; width: auto; height: auto; min-width: 0; padding: 0;
+  color: var(--ink); border-radius: 0; background: transparent; font-size: inherit;
+}
+.practice-option strong { color: var(--ink); font-size: 15px; line-height: 1.45; white-space: normal; overflow-wrap: anywhere; }
+.practice-option small { font-size: 12px; line-height: 1.55; margin-top: 5px; white-space: normal; overflow-wrap: anywhere; }
+.practice-option b { align-self: center; }
+.modal-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.modal-buttons > button { flex: 1 1 120px; }
+.faq-section summary { line-height: 1.5; min-height: 52px; }
+.faq-section summary::-webkit-details-marker { display: none; }
+.faq-section summary::after { flex-shrink: 0; }
+.toast { bottom: calc(var(--dock-height) + 12px); max-width: calc(100% - 36px); }
+.app-shell.focus-mode .topbar, .app-shell.focus-mode .bottom-nav { display: none !important; }
+.app-shell.focus-mode #tasbih.active { min-height: var(--phone-height); padding: var(--safe-top) 18px var(--safe-bottom); display: flex; justify-content: center; }
+.app-shell.focus-mode #countButton { height: 70vh; height: calc(var(--phone-height) * .7); }
+.exit-focus { top: calc(var(--safe-top) + 12px); right: max(14px, env(safe-area-inset-right)); min-width: 44px; min-height: 44px; }
+@media (max-width: 350px) {
+  .screen { padding-inline: 14px; }
+  .nav-item small { font-size: 11px !important; }
+  .settings-card { padding: 14px; }
+  .book-reader { padding: 20px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  #tasbih #countButton { height: 230px; }
+  #countButton::before { width: 190px; height: 190px; }
+  #countButton .tasbih-number { font-size: 58px !important; }
+  .book-shelf { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

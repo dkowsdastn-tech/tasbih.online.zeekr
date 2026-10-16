@@ -239,19 +239,19 @@
     "installHint": "Use it like an app on your phone",
     "installNow": "Install now",
     "readyToInstall": "Ready to install",
-    "installed": "Nur is installed.",
-    "installedTitle": "Nur is already installed",
+    "installed": "Tasbih Online is installed.",
+    "installedTitle": "Tasbih Online is already installed",
     "installedText": "You are using the standalone app.",
     "installedHint": "Installed on this device",
-    "serverRequiredTitle": "Open Nur through its server",
+    "serverRequiredTitle": "Open Tasbih Online through its server",
     "serverRequiredText": "A file opened directly from your computer cannot register a service worker, so a browser cannot install it as a PWA.",
     "serverStep1": "Open the backend folder in a terminal.",
     "serverStep2": "Run: npm start",
     "serverStep3": "Open http://localhost:8080, then return here to install.",
-    "readyInstallTitle": "Nur is ready to install",
+    "readyInstallTitle": "Tasbih Online is ready to install",
     "readyInstallText": "Install it for a full-screen, app-like experience.",
     "readyInstallStep": "Use the Install now button below.",
-    "iosInstallTitle": "Add Nur to your Home Screen",
+    "iosInstallTitle": "Add Tasbih Online to your Home Screen",
     "iosInstallText": "Safari installs web apps from its Share menu.",
     "iosStep1": "Open this page in Safari.",
     "iosStep2": "Tap Share.",
@@ -269,7 +269,7 @@
     "clearData": "Clear local app data",
     "clearDataHint": "Counter, history and settings",
     "dataWarning": "Device data",
-    "clearConfirm": "Delete the counter, history and Nur settings in this browser?",
+    "clearConfirm": "Delete the counter, history and Tasbih Online settings in this browser?",
     "clearNow": "Clear data",
     "privacy": "Your count and settings stay in this browser.",
     "darkTheme": "Use dark theme",
@@ -303,12 +303,12 @@
         "a": "After a complete first visit over HTTPS, the main app is cached. Quran audio and source links need internet access."
       },
       {
-        "q": "Can I put Nur on my home screen?",
+        "q": "Can I put Tasbih Online on my home screen?",
         "a": "Use your browser menu. In Safari on iPhone choose Share, then Add to Home Screen."
       },
       {
         "q": "Why is there no sound or vibration?",
-        "a": "Check Nur settings and device volume. Sound starts after interaction. Vibration depends on browser and device support."
+        "a": "Check Tasbih Online settings and device volume. Sound starts after interaction. Vibration depends on browser and device support."
       },
       {
         "q": "How do I reveal Sunnah?",
@@ -320,7 +320,7 @@
       },
       {
         "q": "How do I clear all data?",
-        "a": "Open settings, choose Clear local app data and confirm. Only this browser’s Nur data is cleared."
+        "a": "Open settings, choose Clear local app data and confirm. Only this browser’s Tasbih Online data is cleared."
       },
       {
         "q": "How do swipes work?",
@@ -335,7 +335,7 @@
     "loading": "Loading stories…",
     "publishedCount": "Published: {count}",
     "empty": "No published stories yet. The first approved story will appear here.",
-    "serverUnavailable": "Stories need the included Nur server. Start it, then open the app at localhost or your HTTPS domain.",
+    "serverUnavailable": "Stories need the included Tasbih Online server. Start it, then open the app at localhost or your HTTPS domain.",
     "share": "Share your story",
     "shareHint": "Every submission is reviewed before publication",
     "notice": "Do not include phone numbers, addresses, documents, or other sensitive personal details.",
@@ -353,21 +353,21 @@
     "sendError": "Could not send the story. Check the server and try again."
   },
   "meta": {
-    "title": "Nur — online tasbih and dhikr counter"
+    "title": "Tasbih Online — online tasbih and dhikr counter"
   },
   "more": {
     "eyebrow": "More",
-    "title": "More in Nur",
+    "title": "More in Tasbih Online",
     "intro": "Quick access to the guide, settings, installation and community tools.",
     "assistant": "Guide",
     "assistantHint": "Ask a careful reference question",
     "settings": "Settings",
     "settingsHint": "Theme, language, sounds and data",
-    "install": "Install Nur",
-    "installHint": "Use Nur like an app on your phone",
+    "install": "Install Tasbih Online",
+    "installHint": "Use Tasbih Online like an app on your phone",
     "moderator": "Moderation",
     "moderatorHint": "Review submitted community stories",
-    "note": "Your local counter and preferences stay in this browser. Published stories are managed by the Nur server."
+    "note": "Your local counter and preferences stay in this browser. Published stories are managed by the Tasbih Online server."
   },
   "new": {
     "free": "Free tasbih",

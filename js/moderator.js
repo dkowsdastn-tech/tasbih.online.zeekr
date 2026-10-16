@@ -73,7 +73,7 @@
   async function readResponse(response) {
     const type = response.headers.get('content-type') || '';
     if (!type.includes('application/json')) {
-      throw new Error('Сервер вернул неожиданный ответ. Откройте панель через локальный сервер Nur.');
+      throw new Error('Сервер вернул неожиданный ответ. Откройте панель через локальный сервер Tasbih Online.');
     }
     const payload = await response.json();
     if (!response.ok) {

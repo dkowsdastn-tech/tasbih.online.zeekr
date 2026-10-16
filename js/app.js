@@ -83,7 +83,7 @@ async function loadLanguage(nextLanguage) {
   storage.setItem(STORAGE + "language", language);
   document.documentElement.lang = language;
   document.documentElement.dir = ["ar", "fa", "ur"].includes(language) ? "rtl" : "ltr";
-  document.title = t("meta.title", language === "ru" ? "Nur — осознанная практика" : "Nur — mindful practice");
+  document.title = t("meta.title", language === "ru" ? "Tasbih Online — осознанная практика" : "Tasbih Online — mindful practice");
   renderLanguageSelects();
   applyTranslations();
 }
@@ -396,7 +396,7 @@ async function loadStories({ silent = false } = {}) {
     const response = await fetch(storyEndpoint(), { headers: { Accept: "application/json" }, signal: controller.signal }); if (!response.ok) throw new Error(`HTTP ${response.status}`); const payload = await response.json(); const stories = Array.isArray(payload.stories) ? payload.stories : [];
     save("storiesCache", stories); renderStories(stories); storiesLoaded = true; setStoriesStatus(stories.length ? interpolate(t("stories.publishedCount", "Published: {count}"), { count: stories.length }) : "");
   } catch {
-    const cached = getSaved("storiesCache", []); renderStories(Array.isArray(cached) ? cached : []); setStoriesStatus(t("stories.serverUnavailable", "Stories need the included Nur server. Start it, then open the app at localhost or your HTTPS domain."), "error");
+    const cached = getSaved("storiesCache", []); renderStories(Array.isArray(cached) ? cached : []); setStoriesStatus(t("stories.serverUnavailable", "Stories need the included Tasbih Online server. Start it, then open the app at localhost or your HTTPS domain."), "error");
   } finally { clearTimeout(timer); storiesBusy = false; }
 }
 function openStoryForm() { elements.storyFeedback.textContent = ""; elements.storyFeedback.classList.remove("success"); safeDialogOpen(elements.storyDialog); }
@@ -417,17 +417,17 @@ async function submitStory(event) {
 function isStandalone() { return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true; }
 function isIOS() { return /iphone|ipad|ipod/i.test(navigator.userAgent); }
 function installGuidance() {
-  if (isStandalone()) return { title: t("settings.installedTitle", "Nur is already installed"), text: t("settings.installedText", "You are using the standalone app."), steps: [], canPrompt: false };
-  if (location.protocol === "file:") return { title: t("settings.serverRequiredTitle", "Open Nur through its server"), text: t("settings.serverRequiredText", "A file opened directly from your computer cannot register a service worker, so a browser cannot install it as a PWA."), steps: [t("settings.serverStep1", "Open the backend folder in a terminal."), t("settings.serverStep2", "Run: npm start"), t("settings.serverStep3", "Open http://localhost:8080, then return here to install.")], canPrompt: false };
-  if (deferredInstall) return { title: t("settings.readyInstallTitle", "Nur is ready to install"), text: t("settings.readyInstallText", "Install it for a full-screen, app-like experience."), steps: [t("settings.readyInstallStep", "Use the Install now button below.")], canPrompt: true };
-  if (isIOS()) return { title: t("settings.iosInstallTitle", "Add Nur to your Home Screen"), text: t("settings.iosInstallText", "Safari installs web apps from its Share menu."), steps: [t("settings.iosStep1", "Open this page in Safari."), t("settings.iosStep2", "Tap Share."), t("settings.iosStep3", "Choose Add to Home Screen, then Add.")], canPrompt: false };
+  if (isStandalone()) return { title: t("settings.installedTitle", "Tasbih Online is already installed"), text: t("settings.installedText", "You are using the standalone app."), steps: [], canPrompt: false };
+  if (location.protocol === "file:") return { title: t("settings.serverRequiredTitle", "Open Tasbih Online through its server"), text: t("settings.serverRequiredText", "A file opened directly from your computer cannot register a service worker, so a browser cannot install it as a PWA."), steps: [t("settings.serverStep1", "Open the backend folder in a terminal."), t("settings.serverStep2", "Run: npm start"), t("settings.serverStep3", "Open http://localhost:8080, then return here to install.")], canPrompt: false };
+  if (deferredInstall) return { title: t("settings.readyInstallTitle", "Tasbih Online is ready to install"), text: t("settings.readyInstallText", "Install it for a full-screen, app-like experience."), steps: [t("settings.readyInstallStep", "Use the Install now button below.")], canPrompt: true };
+  if (isIOS()) return { title: t("settings.iosInstallTitle", "Add Tasbih Online to your Home Screen"), text: t("settings.iosInstallText", "Safari installs web apps from its Share menu."), steps: [t("settings.iosStep1", "Open this page in Safari."), t("settings.iosStep2", "Tap Share."), t("settings.iosStep3", "Choose Add to Home Screen, then Add.")], canPrompt: false };
   return { title: t("settings.browserInstallTitle", "Install from your browser"), text: t("settings.browserInstallText", "If the native prompt is not ready yet, use your browser menu: Install app or Add to Home screen."), steps: [t("settings.browserStep1", "Make sure the page is opened through HTTPS or localhost."), t("settings.browserStep2", "Open the browser menu and choose Install app / Add to Home screen."), t("settings.browserStep3", "If you just opened the page, wait a moment for the service worker to finish installing.")], canPrompt: false };
 }
 function updateInstallHint() { if (!elements.installHint) return {}; const info = installGuidance(); elements.installHint.textContent = isStandalone() ? t("settings.installedHint", "Installed on this device") : (deferredInstall ? t("settings.readyToInstall", "Ready to install") : t("settings.installHint", "Use it like an app on your phone")); return info; }
 function openInstallDialog() { const info = updateInstallHint(); elements.installDialogTitle.textContent = info.title; elements.installDialogText.textContent = info.text; elements.installSteps.replaceChildren(...info.steps.map(step => { const item = document.createElement("li"); item.textContent = step; return item; })); elements.installPromptButton.hidden = !info.canPrompt; safeDialogOpen(elements.installDialog); }
 async function promptInstall() { if (!deferredInstall) return; try { await deferredInstall.prompt(); await deferredInstall.userChoice; } catch { /* Browser owns this prompt; a failure is non-fatal. */ } finally { deferredInstall = undefined; elements.installPromptButton.hidden = true; updateInstallHint(); } }
 function exportLocalData() { const snapshot = {}; for (const key of storage.keys()) { if (key?.startsWith(STORAGE)) snapshot[key.slice(STORAGE.length)] = getSaved(key.slice(STORAGE.length), null); }
-  const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), app: "Nur", data: snapshot }, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `nur-backup-${dayStamp()}.json`; anchor.click(); setTimeout(() => URL.revokeObjectURL(url), 1_000); playSound("save"); showToast(t("settings.exported", "Local backup downloaded."));
+  const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), app: "Tasbih Online", data: snapshot }, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `nur-backup-${dayStamp()}.json`; anchor.click(); setTimeout(() => URL.revokeObjectURL(url), 1_000); playSound("save"); showToast(t("settings.exported", "Local backup downloaded."));
 }
 function clearAllLocalData() { storage.keys().filter(key => key.startsWith(STORAGE)).forEach(key => storage.removeItem(key)); location.reload(); }
 
@@ -479,7 +479,7 @@ function bindEvents() {
   $("#openSettingsFromMore").addEventListener("click", () => { activateScreen("settings"); playSound("tab"); });
   $("#openInstallFromMore")?.addEventListener("click", () => { openInstallDialog(); playSound("tab"); }); $("#openStoryForm").addEventListener("click", openStoryForm); $("#closeStoryDialog").addEventListener("click", () => closeDialog(elements.storyDialog)); elements.storyForm.addEventListener("submit", submitStory);
   elements.install?.addEventListener("click", openInstallDialog); elements.installPromptButton.addEventListener("click", promptInstall); $("#exportData")?.addEventListener("click", exportLocalData); $("#openClearData").addEventListener("click", () => safeDialogOpen(elements.clearDataDialog)); $("#confirmClearData").addEventListener("click", event => { event.preventDefault(); clearAllLocalData(); });
-  window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); deferredInstall = event; updateInstallHint(); }); window.addEventListener("appinstalled", () => { deferredInstall = undefined; updateInstallHint(); showToast(t("settings.installed", "Nur is installed.")); });
+  window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); deferredInstall = event; updateInstallHint(); }); window.addEventListener("appinstalled", () => { deferredInstall = undefined; updateInstallHint(); showToast(t("settings.installed", "Tasbih Online is installed.")); });
   document.addEventListener("dblclick", event => { if (!event.target.closest("input, textarea, select, a")) event.preventDefault(); }, { passive: false });
   // touch-action: manipulation blocks double-tap zoom while preserving pinch accessibility.
   const focusPointers = new Set();
@@ -497,7 +497,7 @@ async function init() {
   renderLanguageSelects();
   bindEvents();
   bindExtras();
-  try { await loadLanguage(language); } catch (error) { console.error("Nur language startup failed", error); }
+  try { await loadLanguage(language); } catch (error) { console.error("Tasbih Online language startup failed", error); }
   registerServiceWorker();
 }
-init().catch(error => { console.error(error); showToast("Не удалось запустить Nur. Обновите страницу."); });
+init().catch(error => { console.error(error); showToast("Не удалось запустить Tasbih Online. Обновите страницу."); });

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Nur — amalan berkesedaran"
+    "title": "Tasbih Online — amalan berkesedaran"
   },
   "nav": {
     "tasbih": "Tasbih",
@@ -200,19 +200,19 @@
     "dataWarning": "Data peranti",
     "clearNow": "Padam data",
     "readyToInstall": "Sedia dipasang",
-    "installed": "Nur telah dipasang.",
-    "installedTitle": "Nur sudah dipasang",
+    "installed": "Tasbih Online telah dipasang.",
+    "installedTitle": "Tasbih Online sudah dipasang",
     "installedText": "Anda sedang menggunakan versi kendiri aplikasi.",
     "installedHint": "Dipasan pada peranti ini",
-    "serverRequiredTitle": "Buka Nur melalui pelayan",
+    "serverRequiredTitle": "Buka Tasbih Online melalui pelayan",
     "serverRequiredText": "Fail yang dibuka terus dari komputer tidak dapat mendaftarkan service worker, jadi PWA tidak boleh dipasang.",
     "serverStep1": "Buka folder backend dalam terminal.",
     "serverStep2": "Jalankan: npm start",
     "serverStep3": "Buka http://localhost:8080, kemudian kembali untuk memasang.",
-    "readyInstallTitle": "Nur sedia dipasang",
+    "readyInstallTitle": "Tasbih Online sedia dipasang",
     "readyInstallText": "Pasang untuk pengalaman skrin penuh seperti aplikasi.",
     "readyInstallStep": "Gunakan butang “Pasang sekarang” di bawah.",
-    "iosInstallTitle": "Tambah Nur ke Skrin Utama",
+    "iosInstallTitle": "Tambah Tasbih Online ke Skrin Utama",
     "iosInstallText": "Safari memasang aplikasi web melalui menu Kongsi.",
     "iosStep1": "Buka halaman ini dalam Safari.",
     "iosStep2": "Ketik Kongsi.",
@@ -233,7 +233,7 @@
     "loading": "Memuatkan kisah…",
     "publishedCount": "Diterbitkan: {count}",
     "empty": "Belum ada kisah diterbitkan.",
-    "serverUnavailable": "Kisah memerlukan pelayan Nur yang disertakan. Jalankan pelayan dan buka aplikasi melalui localhost atau HTTPS.",
+    "serverUnavailable": "Kisah memerlukan pelayan Tasbih Online yang disertakan. Jalankan pelayan dan buka aplikasi melalui localhost atau HTTPS.",
     "share": "Kongsi kisah anda",
     "shareHint": "Setiap kiriman disemak sebelum diterbitkan",
     "notice": "Jangan masukkan nombor telefon, alamat, dokumen atau data peribadi sensitif.",
@@ -255,16 +255,16 @@
   },
   "more": {
     "eyebrow": "Lagi",
-    "title": "Lagi dalam Nur",
+    "title": "Lagi dalam Tasbih Online",
     "intro": "Akses pantas kepada pembantu, tetapan, pemasangan dan alat komuniti.",
     "assistant": "Pembantu",
     "assistantHint": "Tanya soalan rujukan dengan cermat",
     "settings": "Tetapan",
     "settingsHint": "Tema, bahasa, bunyi dan data",
-    "install": "Pasang Nur",
-    "installHint": "Gunakan Nur seperti aplikasi di telefon",
+    "install": "Pasang Tasbih Online",
+    "installHint": "Gunakan Tasbih Online seperti aplikasi di telefon",
     "moderator": "Moderasi",
     "moderatorHint": "Semak cerita komuniti yang dihantar",
-    "note": "Kiraan dan pilihan tempatan kekal dalam pelayar ini. Cerita yang diterbitkan diurus oleh pelayan Nur."
+    "note": "Kiraan dan pilihan tempatan kekal dalam pelayar ini. Cerita yang diterbitkan diurus oleh pelayan Tasbih Online."
   }
 }

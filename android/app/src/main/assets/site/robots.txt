@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nurtasbih.pages.dev/sitemap.xml
