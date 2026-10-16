@@ -9,7 +9,7 @@
   }
   function setup(){
     document.querySelectorAll('.nav-item').forEach(button=>button.querySelector('span').replaceChildren(img(icons[button.dataset.target])));
-    $('.brand').textContent='NUR TASBIH';
+    $('.brand').textContent='TASBIH ONLINE';
     $('.quran-art').replaceChildren();
     document.querySelectorAll('.tasbih-actions [aria-hidden],#newSunna [aria-hidden]').forEach(el=>el.remove());
     $('#clearCurrent').textContent=label('Сбросить','Reset');
@@ -34,6 +34,11 @@
       const heading=button.closest('.settings-card').querySelector('h3');
       if(heading){heading.id='switch-label-'+i;button.setAttribute('aria-labelledby',heading.id);}
     });
+    const phrase=document.createElement('div');phrase.id='activePhrase';phrase.className='active-phrase';phrase.hidden=true;
+    const arabic=document.createElement('p');arabic.lang='ar';arabic.dir='rtl';arabic.className='active-arabic';
+    const transcription=document.createElement('p');transcription.className='active-transcription';phrase.append(arabic,transcription);button.after(phrase);
+    function syncPhrase(){const free=$('#tasbih').classList.contains('free-practice');phrase.hidden=free;arabic.textContent=$('#practiceArabic').textContent;transcription.textContent=$('#practiceTransliteration').textContent;}
+    new MutationObserver(syncPhrase).observe($('#practicePanel'),{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['hidden']});syncPhrase();
     refresh();
     ['#languageSelect','#settingsLanguageSelect'].forEach(s=>$(s)?.addEventListener('change',()=>setTimeout(refresh,50)));
   }
@@ -70,7 +75,7 @@
     const code=document.documentElement.lang;
     const help=code==='ru'?null:(code==='kk'?'help-kk.html':'help-en.html');
     document.querySelectorAll('.help-links a').forEach((a,i)=>{
-      const names=code==='kk'?['Орнату','Нұсқаулық','Nur туралы']:code==='ru'?['Установка','Инструкция','О Nur']:['Install','Guide','About Nur'];
+      const names=code==='kk'?['Орнату','Нұсқаулық','Tasbih Online туралы']:code==='ru'?['Установка','Инструкция','О Tasbih Online']:['Install','Guide','About Tasbih Online'];
       a.textContent=names[i];a.href=help?'./'+help+'#'+['install','guide','about'][i]:['./install.html','./guide.html','./about.html'][i];
     });
     document.querySelectorAll('.modal-close').forEach(button=>button.setAttribute('aria-label',window.NurUI.translate('common.close','Close')));
@@ -90,7 +95,7 @@
   function renderShelf(){
     selected=null;const root=$('#bookLibrary');root.replaceChildren();const h=document.createElement('h1');h.className='library-title';h.textContent=label('Библиотека','Library');const lead=document.createElement('p');lead.className='library-lead';lead.textContent=label('Выберите небольшую книгу. Одна страница — одно напоминание.','Choose a short book. One page, one reminder.');
     const shelf=document.createElement('div');shelf.className='book-shelf';
-    groups().forEach(group=>{if(!group.entries.length)return;const b=document.createElement('button');b.type='button';b.className='book-cover';const edition=document.createElement('span');edition.className='book-edition';edition.textContent='NUR';const title=document.createElement('strong');title.textContent=group.title;const subtitle=document.createElement('small');subtitle.textContent=group.subtitle;b.append(edition,title,subtitle);b.addEventListener('click',()=>{selected=group;page=0;paperSound();renderPage(true);});shelf.append(b);});root.append(h,lead,shelf);
+    groups().forEach(group=>{if(!group.entries.length)return;const b=document.createElement('button');b.type='button';b.className='book-cover';const edition=document.createElement('span');edition.className='book-edition';edition.textContent='TASBIH';const title=document.createElement('strong');title.textContent=group.title;const subtitle=document.createElement('small');subtitle.textContent=group.subtitle;b.append(edition,title,subtitle);b.addEventListener('click',()=>{selected=group;page=0;paperSound();renderPage(true);openCover(group);});shelf.append(b);});root.append(h,lead,shelf);
   }
   function renderPage(opening=false){
     const root=$('#bookLibrary');root.replaceChildren();const reader=document.createElement('article');reader.className='book-reader light-page'+(opening?' book-opening':'');const head=document.createElement('div');head.className='reader-head';const back=document.createElement('button');back.type='button';back.textContent=label('← Книги','← Books');back.addEventListener('click',renderShelf);const name=document.createElement('small');name.textContent=selected.title;head.append(back,name);
@@ -100,6 +105,20 @@
     reader.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();turn(1)}if(e.key==='ArrowLeft'){e.preventDefault();turn(-1)}});
     let start=null;body.addEventListener('touchstart',e=>{start={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});body.addEventListener('touchend',e=>{if(!start)return;const dx=e.changedTouches[0].clientX-start.x,dy=e.changedTouches[0].clientY-start.y;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.5)turn(dx<0?1:-1);start=null;},{passive:true});
   }
-  function turn(delta){const next=page+delta;if(next<0||next>=selected.entries.length)return;page=next;paperSound();renderPage();$('.reader-page').classList.add(delta<0?'page-back':'page-forward');$('.reader-page').focus({preventScroll:true});}
+  function reduced(){return document.documentElement.dataset.reduceMotion==='true'||window.matchMedia('(prefers-reduced-motion: reduce)').matches;}
+  function openCover(group){
+    if(reduced())return;
+    const cover=document.createElement('div');cover.className='reader-opening-cover';cover.setAttribute('aria-hidden','true');
+    const brand=document.createElement('small');brand.textContent='TASBIH ONLINE';const title=document.createElement('strong');title.textContent=group.title;const subtitle=document.createElement('span');subtitle.textContent=group.subtitle;cover.append(brand,title,subtitle);$('.book-reader').append(cover);setTimeout(()=>cover.remove(),850);
+  }
+  function turn(delta){
+    const next=page+delta;if(next<0||next>=selected.entries.length)return;
+    const old=$('.reader-page').cloneNode(true);page=next;paperSound();renderPage();
+    if(!reduced()){
+      old.className='reader-page page-leaf '+(delta<0?'leaf-back':'leaf-forward');old.setAttribute('aria-hidden','true');old.inert=true;
+      const fresh=$('.reader-page');old.style.top=fresh.offsetTop+'px';old.style.left=fresh.offsetLeft+'px';old.style.width=fresh.offsetWidth+'px';old.style.minHeight=fresh.offsetHeight+'px';$('.book-reader').append(old);setTimeout(()=>old.remove(),680);
+    }
+    $('.reader-page:not(.page-leaf)').focus({preventScroll:true});
+  }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup,{once:true});else setup();
 })();

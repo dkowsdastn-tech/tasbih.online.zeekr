@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
@@ -19,6 +21,9 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.webkit.WebViewAssetLoader;
 import androidx.webkit.WebViewClientCompat;
+import androidx.webkit.WebViewCompat;
+import androidx.webkit.WebViewFeature;
+import java.util.Collections;
 
 /** Offline app shell. Only HTTPS external sources open outside the app. */
 public final class MainActivity extends ComponentActivity {
@@ -56,6 +61,21 @@ public final class MainActivity extends ComponentActivity {
         settings.setSupportZoom(false);
         web.setSaveEnabled(true);
         WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
+        // A single bounded haptic command, available only to the bundled origin.
+        if (WebViewFeature.isFeatureSupported(WebViewFeature.WEB_MESSAGE_LISTENER)) {
+            WebViewCompat.addWebMessageListener(web, "TasbihHaptics",
+                    Collections.singleton("https://" + HOST), (view, message, origin, mainFrame, reply) -> {
+                if (!mainFrame || !"https".equals(origin.getScheme()) || !HOST.equals(origin.getHost())) return;
+                try {
+                    int duration = Integer.parseInt(message.getData());
+                    if (duration < 6 || duration > 18) return;
+                    Vibrator vibrator = getSystemService(Vibrator.class);
+                    if (vibrator != null && vibrator.hasVibrator()) {
+                        vibrator.vibrate(VibrationEffect.createOneShot(duration, VibrationEffect.DEFAULT_AMPLITUDE));
+                    }
+                } catch (IllegalArgumentException | SecurityException ignored) { }
+            });
+        }
         WebViewAssetLoader loader = new WebViewAssetLoader.Builder()
                 .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this)).build();
         web.setWebViewClient(new WebViewClientCompat() {

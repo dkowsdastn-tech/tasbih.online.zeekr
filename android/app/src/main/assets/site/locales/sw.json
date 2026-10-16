@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Nur — ibada yenye umakini"
+    "title": "Tasbih Online — ibada yenye umakini"
   },
   "nav": {
     "tasbih": "Tasbihi",
@@ -215,19 +215,19 @@
     "installHint": "Itumie kama programu kwenye simu yako",
     "installNow": "Sakinisha sasa",
     "readyToInstall": "Tayari kusakinisha",
-    "installed": "Nur imesakinishwa.",
-    "installedTitle": "Nur tayari imesakinishwa",
+    "installed": "Tasbih Online imesakinishwa.",
+    "installedTitle": "Tasbih Online tayari imesakinishwa",
     "installedText": "Unatumia programu inayojitegemea.",
     "installedHint": "Imesakinishwa kwenye kifaa hiki",
-    "serverRequiredTitle": "Fungua Nur kupitia seva yake",
+    "serverRequiredTitle": "Fungua Tasbih Online kupitia seva yake",
     "serverRequiredText": "Faili inayofunguliwa moja kwa moja kutoka kwenye kompyuta haiwezi kusajili service worker, kwa hiyo kivinjari hakiwezi kuisakinisha kama PWA.",
     "serverStep1": "Fungua folda ya backend katika terminal.",
     "serverStep2": "Endesha: npm start",
     "serverStep3": "Fungua http://localhost:8080, kisha rudi hapa kusakinisha.",
-    "readyInstallTitle": "Nur iko tayari kusakinishwa",
+    "readyInstallTitle": "Tasbih Online iko tayari kusakinishwa",
     "readyInstallText": "Isakinishe kwa matumizi ya skrini nzima kama programu.",
     "readyInstallStep": "Tumia kitufe cha kusakinisha hapa chini.",
-    "iosInstallTitle": "Ongeza Nur kwenye Home Screen",
+    "iosInstallTitle": "Ongeza Tasbih Online kwenye Home Screen",
     "iosInstallText": "Safari husakinisha programu za wavuti kutoka menyu ya Share.",
     "iosStep1": "Fungua ukurasa huu katika Safari.",
     "iosStep2": "Gusa Share.",
@@ -258,7 +258,7 @@
     "loading": "Hadithi zinapakiwa…",
     "publishedCount": "Zilizochapishwa: {count}",
     "empty": "Bado hakuna hadithi iliyochapishwa. Hadithi ya kwanza iliyoidhinishwa itaonekana hapa.",
-    "serverUnavailable": "Hadithi zinahitaji seva ya Nur iliyojumuishwa. Endesha seva, kisha fungua programu kwenye localhost au domeni yako ya HTTPS.",
+    "serverUnavailable": "Hadithi zinahitaji seva ya Tasbih Online iliyojumuishwa. Endesha seva, kisha fungua programu kwenye localhost au domeni yako ya HTTPS.",
     "share": "Shiriki hadithi yako",
     "shareHint": "Kila ujumbe hupitiwa kabla ya kuchapishwa",
     "notice": "Usijumuishe namba za simu, anwani, hati au taarifa nyingine nyeti za kibinafsi.",
@@ -277,16 +277,16 @@
   },
   "more": {
     "eyebrow": "Дополнительно",
-    "title": "Ещё в Nur",
+    "title": "Ещё в Tasbih Online",
     "intro": "Быстрый доступ к помощнику, настройкам, установке и инструментам сообщества.",
     "assistant": "Помощник",
     "assistantHint": "Задайте аккуратный справочный вопрос",
     "settings": "Настройки",
     "settingsHint": "Тема, язык, звуки и данные",
-    "install": "Установить Nur",
-    "installHint": "Используйте Nur как приложение на телефоне",
+    "install": "Установить Tasbih Online",
+    "installHint": "Используйте Tasbih Online как приложение на телефоне",
     "moderator": "Модерация",
     "moderatorHint": "Проверяйте присланные истории сообщества",
-    "note": "Ваш счётчик и настройки остаются в этом браузере. Опубликованные истории управляются сервером Nur."
+    "note": "Ваш счётчик и настройки остаются в этом браузере. Опубликованные истории управляются сервером Tasbih Online."
   }
 }

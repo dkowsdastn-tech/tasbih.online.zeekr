@@ -1,7 +1,7 @@
 /* Only cache this app's public shell; never APIs or remote audio. */
 const PREFIX = 'nur-shell-' + encodeURIComponent(self.registration.scope) + '-';
-const CACHE = PREFIX + 'v27.0';
-const CORE = ['./index.html','./about.html','./help-kk.html','./help-en.html','./guide.html','./install.html','./faq.html','./css/styles.css?v=11','./css/refined.css?v=11','./css/mobile.css?v=27','./css/phone-layout.css?v=27','./css/polish.css?v=27','./js/nur.bundle.js?v=27','./js/mobile.js?v=27','./js/ui-text.js?v=27','./js/reading.js?v=27','./js/reading-kk.js?v=27','./manifest.webmanifest','./assets/icon.svg','./assets/brand.svg','./assets/focus.svg','./assets/quran.svg','./assets/sun.svg','./assets/kaaba.svg','./assets/book.svg','./assets/beads.svg','./assets/settings.svg','./assets/icon-192.png','./assets/icon-512.png'];
+const CACHE = PREFIX + 'v28.0';
+const CORE = ['./index.html','./about.html','./help-kk.html','./help-en.html','./guide.html','./install.html','./faq.html','./css/styles.css?v=11','./css/refined.css?v=11','./css/mobile.css?v=28','./css/phone-layout.css?v=28','./css/polish.css?v=28','./js/nur.bundle.js?v=28','./js/mobile.js?v=28','./js/ui-text.js?v=28','./js/reading.js?v=28','./js/reading-kk.js?v=28','./manifest.webmanifest','./assets/icon.svg','./assets/brand.svg','./assets/focus.svg','./assets/quran.svg','./assets/sun.svg','./assets/kaaba.svg','./assets/book.svg','./assets/beads.svg','./assets/settings.svg','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch', event => {

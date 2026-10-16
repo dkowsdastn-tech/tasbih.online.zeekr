@@ -1,6 +1,10 @@
 # Nur Tasbih — Android-проект
 
-Это исходный проект для сборки. В архиве НЕТ подписанного AAB/APK: Android SDK и JDK 17 на компьютере подготовки отсутствовали. Нативная сборка и тестирование на устройстве ещё не выполнены.
+Сборка 15 октября 2026 выполнена в GitHub Actions: lintDebug, assembleDebug и bundleRelease завершились успешно. Получены тестовый APK с debug-подписью и неподписанный release AAB. Ошибок Lint нет, остаются 11 предупреждений о версиях, резервном копировании и ресурсах значка. Проверка на эмуляторе и настоящем устройстве ещё не выполнена.
+
+Сборка: https://github.com/dkowsdastn-tech/tasbih.online.zeekr/actions/runs/38732695311
+Исходный коммит: e66c56a9eeaffb5ecbcf12ac2172c51875e4130d
+Отдельные файлы: outputs/Nur-test.apk и outputs/Nur-release-UNSIGNED.aab. Подписанный для магазина AAB пока не создан.
 
 Проект использует Gradle 8.13, Android Gradle Plugin 8.13.2, JDK 17, SDK 36. В Android Studio выберите JDK 17+ и Gradle 8.13, установите Android SDK Platform 36. Лицензии SDK принимает владелец проекта. Затем выполните Sync и Build.
 

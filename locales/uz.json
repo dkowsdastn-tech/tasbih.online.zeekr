@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Nur — ongli amaliyot"
+    "title": "Tasbih Online — ongli amaliyot"
   },
   "nav": {
     "tasbih": "Tasbeh",
@@ -215,8 +215,8 @@
     "installHint": "Telefonda ilova kabi ishlating",
     "installNow": "Hozir o‘rnatish",
     "readyToInstall": "O‘rnatishga tayyor",
-    "installed": "Nur o‘rnatildi.",
-    "installedTitle": "Nur allaqachon o‘rnatilgan",
+    "installed": "Tasbih Online o‘rnatildi.",
+    "installedTitle": "Tasbih Online allaqachon o‘rnatilgan",
     "installedText": "Siz mustaqil ilovadan foydalanyapsiz.",
     "installedHint": "Bu qurilmaga o‘rnatilgan",
     "serverRequiredTitle": "Nurni server orqali oching",
@@ -224,7 +224,7 @@
     "serverStep1": "Terminalda backend papkasini oching.",
     "serverStep2": "Ishga tushiring: npm start",
     "serverStep3": "http://localhost:8080 manzilini oching, so‘ng o‘rnatish uchun bu yerga qayting.",
-    "readyInstallTitle": "Nur o‘rnatishga tayyor",
+    "readyInstallTitle": "Tasbih Online o‘rnatishga tayyor",
     "readyInstallText": "To‘liq ekranli, ilovaga o‘xshash tajriba uchun o‘rnating.",
     "readyInstallStep": "Quyidagi o‘rnatish tugmasidan foydalaning.",
     "iosInstallTitle": "Nurni asosiy ekranga qo‘shing",
@@ -258,7 +258,7 @@
     "loading": "Hikoyalar yuklanmoqda…",
     "publishedCount": "Chop etildi: {count}",
     "empty": "Hali chop etilgan hikoyalar yo‘q. Birinchi tasdiqlangan hikoya shu yerda chiqadi.",
-    "serverUnavailable": "Hikoyalar uchun kiritilgan Nur serveri kerak. Serverni ishga tushiring va ilovani localhost yoki HTTPS domeningizda oching.",
+    "serverUnavailable": "Hikoyalar uchun kiritilgan Tasbih Online serveri kerak. Serverni ishga tushiring va ilovani localhost yoki HTTPS domeningizda oching.",
     "share": "Hikoyangizni ulashing",
     "shareHint": "Har bir yuborilgan hikoya chop etilishidan oldin ko‘rib chiqiladi",
     "notice": "Telefon raqami, manzil, hujjat yoki boshqa maxfiy shaxsiy ma’lumotlarni kiritmang.",
@@ -277,16 +277,16 @@
   },
   "more": {
     "eyebrow": "Дополнительно",
-    "title": "Ещё в Nur",
+    "title": "Ещё в Tasbih Online",
     "intro": "Быстрый доступ к помощнику, настройкам, установке и инструментам сообщества.",
     "assistant": "Помощник",
     "assistantHint": "Задайте аккуратный справочный вопрос",
     "settings": "Настройки",
     "settingsHint": "Тема, язык, звуки и данные",
-    "install": "Установить Nur",
-    "installHint": "Используйте Nur как приложение на телефоне",
+    "install": "Установить Tasbih Online",
+    "installHint": "Используйте Tasbih Online как приложение на телефоне",
     "moderator": "Модерация",
     "moderatorHint": "Проверяйте присланные истории сообщества",
-    "note": "Ваш счётчик и настройки остаются в этом браузере. Опубликованные истории управляются сервером Nur."
+    "note": "Ваш счётчик и настройки остаются в этом браузере. Опубликованные истории управляются сервером Tasbih Online."
   }
 }

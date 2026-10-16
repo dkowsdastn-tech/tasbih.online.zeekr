@@ -1,0 +1,36 @@
+:root { --header-height: calc(82px + var(--safe-top)); --dock-height: calc(82px + var(--safe-bottom)); }
+.topbar { gap: 12px; }
+.brand { font-size: 11px; }
+.top-controls { display: flex; gap: 14px; align-items: flex-start; }
+.topbar .top-controls #themeToggle, .topbar .top-controls #toggleFocusMode {
+  position: relative; order: 0; inset: auto; width: 44px; min-width: 44px; height: 44px; padding: 10px;
+  border: 1px solid var(--line); border-radius: 50%; background: var(--surface); display: flex;
+  align-items: center; justify-content: center; overflow: visible; font-size: 12px;
+}
+.top-controls button img { display: block; width: 23px; height: 23px; }
+.top-controls button small { position: absolute; inset: calc(100% + 4px) auto auto; font-size: 10px; line-height: 1.2; white-space: nowrap; color: var(--muted); }
+.nav-item > span { display: block; }
+.nav-item > span img { width: 25px; height: 25px; }
+.bottom-nav { border-radius: 20px 20px 0 0!important; }
+.nav-item { height: 64px; min-height: 60px; display: flex; flex-direction: column; gap: 4px; padding: 5px 1px!important; }
+.nav-item small { font-size: 10px!important; }
+#countCaption { display: none!important; }
+#countButton .tasbih-number { font-family: Manrope,system-ui,sans-serif; font-weight: 400; letter-spacing: -.065em; font-size: clamp(72px,23vw,112px)!important; }
+.book-cover { transition: transform .2s ease,box-shadow .2s ease; }
+@media(hover:hover){.book-cover:hover { transform: translateY(-3px) rotate(-1deg); box-shadow:inset 7px 0 #0002,inset 9px 0 #ffffff18,0 16px 28px #183c211c; }}
+.book-cover:nth-child(4){background:#6c4051}.book-cover:nth-child(5){background:#526447}
+.book-reader { perspective: 1000px; }
+.book-reader.book-opening { transform-origin: left center; animation: book-open .42s ease-out; }
+.book-reader.light-page::after { content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(ellipse at 20% 25%,#ffe8a344,transparent 75%);opacity:0;animation:nur-light .45s ease-out; }
+@keyframes book-open{from{opacity:.2;transform:perspective(1000px) rotateY(-12deg) scale(.985)}to{opacity:1;transform:none}}
+@keyframes nur-light{0%{opacity:0}35%{opacity:.55}100%{opacity:0}}
+.reader-page.page-forward { transform-origin: left center; animation: turn-forward .28s ease-out; }
+.reader-page.page-back { transform-origin: right center; animation: turn-back .28s ease-out; }
+@keyframes turn-forward { from{opacity:.4;transform:rotateY(-8deg) translateX(7px)}to{opacity:1;transform:none} }
+@keyframes turn-back { from{opacity:.4;transform:rotateY(8deg) translateX(-7px)}to{opacity:1;transform:none} }
+#scratch .sunna-content { border-radius:22px; transition:none; }
+#scratch .scratch-card.sunna-enter { animation:sunna-page .3s ease-out; }
+@keyframes sunna-page { from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:translateY(0)} }
+.app-shell.focus-mode #countButton { height:calc(var(--phone-height) * .7); }
+@media(prefers-reduced-motion:reduce){.reader-page,.book-cover,.book-reader,.book-reader::after,#scratch .scratch-card{animation:none!important;transition:none!important}}
+html[data-reduce-motion=true] .reader-page,html[data-reduce-motion=true] .book-reader,html[data-reduce-motion=true] .book-reader::after,html[data-reduce-motion=true] #scratch .scratch-card{animation:none!important}

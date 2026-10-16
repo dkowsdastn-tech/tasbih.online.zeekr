@@ -1,4 +1,4 @@
-/* Nur v11 UI layer: preserves existing controls and moves them below the counter. */
+/* Tasbih Online v11 UI layer: preserves existing controls and moves them below the counter. */
 (() => {
   const $ = (selector, scope = document) => scope.querySelector(selector);
 
@@ -8,7 +8,7 @@
       ['Источники', 'Если в карточке указана ссылка на источник, её можно открыть и сверить формулировку в первоисточнике.'],
       ['Приватность', 'Счётчик и настройки хранятся в этом браузере. Не добавляйте личные данные в публичные истории.'],
       ['Режим тишины', 'Дополнительные элементы можно скрыть, чтобы оставить на экране только практику счёта.'],
-      ['Работа как приложение', 'Nur можно установить как PWA в поддерживаемом браузере и открывать почти как обычное приложение.'],
+      ['Работа как приложение', 'Tasbih Online можно установить как PWA в поддерживаемом браузере и открывать почти как обычное приложение.'],
       ['Доступность', 'Есть тёмная тема, уменьшение анимаций, клавиатурная навигация и сенсорное управление.']
     ]},
     en: { more: 'More', basics: 'Good to know', items: [
@@ -16,7 +16,7 @@
       ['Sources', 'When a card includes a source link, open it to check the wording in the primary source.'],
       ['Privacy', 'Counter data and preferences stay in this browser. Avoid personal details in public stories.'],
       ['Focus mode', 'Extra interface can be hidden so only the counting practice remains visible.'],
-      ['Installable', 'Nur can be installed as a PWA in supported browsers and used like an app.'],
+      ['Installable', 'Tasbih Online can be installed as a PWA in supported browsers and used like an app.'],
       ['Accessibility', 'Dark theme, reduced motion, keyboard navigation and touch controls are supported.']
     ]}
   };
