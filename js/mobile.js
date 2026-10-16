@@ -116,7 +116,7 @@
     const old=$('.reader-page').cloneNode(true);page=next;paperSound();renderPage();
     if(!reduced()){
       old.className='reader-page page-leaf '+(delta<0?'leaf-back':'leaf-forward');old.setAttribute('aria-hidden','true');old.inert=true;
-      const fresh=$('.reader-page');old.style.top=fresh.offsetTop+'px';old.style.left=fresh.offsetLeft+'px';old.style.width=fresh.offsetWidth+'px';old.style.minHeight=fresh.offsetHeight+'px';$('.book-reader').append(old);setTimeout(()=>old.remove(),680);
+      const fresh=$('.reader-page');old.style.top=fresh.offsetTop+'px';old.style.left=fresh.offsetLeft+'px';old.style.width=fresh.offsetWidth+'px';old.style.minHeight=fresh.offsetHeight+'px';$('.book-reader').append(old);setTimeout(()=>old.remove(),800);
     }
     $('.reader-page:not(.page-leaf)').focus({preventScroll:true});
   }

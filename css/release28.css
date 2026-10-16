@@ -20,11 +20,11 @@
 .reader-opening-cover span { font-size:14px; opacity:.8; }
 .page-leaf { position:absolute; z-index:4; margin:0; background:var(--surface); box-shadow:12px 0 20px #182c2725; pointer-events:none; backface-visibility:hidden; }
 .page-leaf::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,transparent 35%,#89764922 80%,#fff6); pointer-events:none; }
-.leaf-forward { transform-origin:left center; animation:leaf-turn .65s cubic-bezier(.25,.6,.3,1) forwards; }
-.leaf-back { transform-origin:right center; animation:leaf-return .65s cubic-bezier(.25,.6,.3,1) forwards; }
+.leaf-forward { transform-origin:left center; animation:leaf-turn .78s cubic-bezier(.25,.65,.2,1) forwards; }
+.leaf-back { transform-origin:right center; animation:leaf-return .78s cubic-bezier(.25,.65,.2,1) forwards; }
 @keyframes cover-unfold { 0%,12%{transform:rotateY(0);opacity:1}85%{opacity:1}100%{transform:rotateY(-165deg);opacity:0} }
-@keyframes leaf-turn { from{transform:rotateY(0);opacity:1}75%{opacity:1}to{transform:rotateY(-160deg);opacity:0} }
-@keyframes leaf-return { from{transform:rotateY(0);opacity:1}75%{opacity:1}to{transform:rotateY(160deg);opacity:0} }
+@keyframes leaf-turn { 0%{transform:rotateY(0);opacity:1}45%{transform:rotateY(-28deg) translateX(-1%);opacity:1}100%{transform:rotateY(-110deg) translateX(-6%);opacity:0} }
+@keyframes leaf-return { 0%{transform:rotateY(0);opacity:1}45%{transform:rotateY(28deg) translateX(1%);opacity:1}100%{transform:rotateY(110deg) translateX(6%);opacity:0} }
 @media(max-width:380px){.topbar .brand{flex-basis:100%;text-align:center}.topbar .language-picker{margin-inline-end:auto}.top-controls{margin-inline-start:auto}.topbar{padding-bottom:22px}.active-arabic{font-size:24px}}
 @media(prefers-reduced-motion:reduce){.reader-opening-cover,.page-leaf{display:none!important}}
 html[data-reduce-motion=true] .reader-opening-cover,html[data-reduce-motion=true] .page-leaf{display:none!important}
@@ -47,3 +47,6 @@ html[data-reduce-motion=true] .reader-opening-cover,html[data-reduce-motion=true
 @keyframes backdrop-settle{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.screen.active,#countButton .tasbih-number,.practice-choice .choice-content,.modal,.modal::backdrop,.faq-section details>p{animation:none!important}.nav-item,.nav-item img{transition:none!important}}
 html[data-reduce-motion=true] .screen.active,html[data-reduce-motion=true] #countButton .tasbih-number,html[data-reduce-motion=true] .practice-choice .choice-content,html[data-reduce-motion=true] .modal,html[data-reduce-motion=true] .modal::backdrop,html[data-reduce-motion=true] .faq-section details>p{animation:none!important}
+
+.page-leaf::after{animation:fold-shade .78s ease-in-out both}
+@keyframes fold-shade{0%{opacity:.1;transform:translateX(25%)}50%{opacity:.8;transform:translateX(0)}100%{opacity:.15;transform:translateX(-20%)}}
